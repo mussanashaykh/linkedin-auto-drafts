@@ -4,7 +4,7 @@ def _clean(s: str) -> str:
     s = (s or "").strip()
     return re.sub(r"\s+", " ", s)
 
-def _phrases(text: str, max_n: int = 12) -> list:
+def _phrases(text: str, max_n: int = 14) -> list:
     t = re.sub(r"https?://\S+", " ", (text or "").lower())
     toks = re.findall(r"[a-z0-9][a-z0-9_\-/]*", t)
     stop = set("""a about above after again against all am an and any are as at be because been
@@ -26,7 +26,7 @@ def compose_post(title, url, brief):
     brief = _clean(brief)
     phrases = _phrases(title + " " + brief)
 
-    # Tone presets (lightly varied each run)
+    # Templates
     openers = [
         "Quick field note:",
         "From recent work:",
@@ -42,43 +42,48 @@ def compose_post(title, url, brief):
         "Simple, observable paths beat clever, fragile ones."
     ]
 
-    # First paragraph (hook + context) — natural, specific
+    # Paragraph 1 — hook + context + observed patterns
     topic_hint = phrases[0]
     p1 = (
         f"{_pick(openers)} {title or topic_hint}. "
-        f"In real projects, this shows up as unclear ownership, half-done configs, and invisible failure modes. "
-        f"Fixing {phrases[0]} and {phrases[1] if len(phrases)>1 else 'the fundamentals'} early saves a lot of weekend work later."
+        f"I’ve watched multiple teams wrestle with this, and it usually starts the same way: "
+        f"big goals, some quick wins, then creeping complexity. The early excitement fades when "
+        f"small misalignments—like unclear ownership or half-finished configs—turn into recurring headaches. "
+        f"Fixing {phrases[0]} and {phrases[1] if len(phrases)>1 else 'the fundamentals'} early is rarely flashy, "
+        f"but it’s the difference between firefighting every week and sleeping well at night."
     )
 
-    # Second paragraph (my take) — opinionated but practical
+    # Paragraph 2 — my take + what to focus on
     p2 = (
-        f"My take: {_pick(stances)} Start with a crisp definition of done, make it repeatable, "
-        f"and prove it under pressure. Treat {phrases[2] if len(phrases)>2 else 'risk'} and "
-        f"{phrases[3] if len(phrases)>3 else 'cost'} as first-class signals, not afterthoughts."
+        f"My take: {_pick(stances)} The fastest way to improve outcomes is to make success measurable "
+        f"and boring to repeat. That means clear definitions of done, tested recovery steps, and "
+        f"visibility into the right signals—not just raw metrics. "
+        f"Treat {phrases[2] if len(phrases)>2 else 'risk'} and "
+        f"{phrases[3] if len(phrases)>3 else 'cost'} as design inputs from day one, not problems to patch later. "
+        f"When the fundamentals are right, the advanced tuning actually sticks."
     )
 
-    # Decide if bullets are actually helpful this time
-    use_bullets = (len(phrases) >= 6 and random.random() < 0.6)
+    # Optional bullets for emphasis
+    use_bullets = (len(phrases) >= 6 and random.random() < 0.7)
     bullets = []
     if use_bullets:
         verbs = ["Define", "Automate", "Baseline", "Test", "Document", "Alert on"]
         picks = phrases[:6]
         random.shuffle(picks)
-        for i, ph in enumerate(picks[:3]):  # max 3, short and useful
+        for i, ph in enumerate(picks[:3]):
             v = verbs[i % len(verbs)]
-            ph = ph.replace(".", "")
-            bullets.append(f"{v} {ph} in plain language and make someone accountable.")
+            bullets.append(f"{v} {ph} and make someone accountable.")
 
-    # Gentle CTA (no link, no source)
+    # CTA
     ctas = [
-        "What would you do differently?",
+        "What’s been your experience with this?",
         "Where have you seen this go wrong?",
-        "If you’ve solved this cleanly, I want to learn from you.",
+        "If you’ve solved this cleanly, I’d love to hear how.",
         "Disagree with my take? Tell me why."
     ]
     cta = _pick(ctas)
 
-    # Assemble with natural flow: 2 short paragraphs, optional bullets, CTA
+    # Assemble
     parts = [p1, p2]
     if bullets:
         parts.append("\n".join(f"• {b}" for b in bullets))
@@ -86,11 +91,10 @@ def compose_post(title, url, brief):
 
     body = "\n\n".join(parts)
 
-    # Highlights for banner (only if we used bullets; otherwise pull key phrases)
+    # Highlights for banner
     if bullets:
         highlights = [b.replace("• ", "").rstrip(".") for b in bullets][:3]
     else:
         highlights = [w.title() for w in phrases[:3]]
 
-    # Keep comfortably under LinkedIn’s cap
-    return body[:1800], highlights
+    return body[:2200], highlights
