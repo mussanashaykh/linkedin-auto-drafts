@@ -1,6 +1,6 @@
 from PIL import Image, ImageDraw, ImageFont
 
-def make_banner(text, out_path):
+make_banner(title, highlights, out_path):
     W,H = 1200, 675
     img = Image.new("RGB", (W, H), (245,247,250))
     d = ImageDraw.Draw(img)
