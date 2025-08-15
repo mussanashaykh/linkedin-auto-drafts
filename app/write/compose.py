@@ -1,134 +1,96 @@
 import re, random
 
-# ===== Helpers =====
 def _clean(s: str) -> str:
     s = (s or "").strip()
     return re.sub(r"\s+", " ", s)
 
-def _split_phrases(text: str) -> list:
-    """Roughly extract key phrases from title/brief for use in sentences."""
-    t = (text or "").lower()
-    t = re.sub(r"https?://\S+", " ", t)
+def _phrases(text: str, max_n: int = 12) -> list:
+    t = re.sub(r"https?://\S+", " ", (text or "").lower())
     toks = re.findall(r"[a-z0-9][a-z0-9_\-/]*", t)
-    bad = set("""a about above after again against all am an and any are as at be because been
-        before being below between both but by can could did do does doing down during each few
-        for from further had has have having he her here hers herself him himself his how i if in
-        into is it its itself let me more most my myself nor not of off on once only or other our
-        ours ourselves out over own same she should so some such than that the their theirs them
-        themselves then there these they this those through to too under until up very was we were
-        what when where which while who whom why with would you your yours yourself yourselves""".split())
-    toks = [t for t in toks if len(t) > 2 and t not in bad]
-    # stitch some bi-grams for flavor
-    pairs = []
-    for i in range(len(toks) - 1):
-        if toks[i] != toks[i+1]:
-            pairs.append(toks[i] + " " + toks[i+1])
-    ranked = list(dict.fromkeys(pairs + toks))  # keep order, de-dupe
-    return ranked[:20]
+    stop = set("""a about above after again against all am an and any are as at be because been
+    before being below between both but by can could did do does doing down during each few for from further had
+    has have having he her here hers herself him himself his how i if in into is it its itself let me more most my
+    myself nor not of off on once only or other our ours ourselves out over own same she should so some such than
+    that the their theirs them themselves then there these they this those through to too under until up very was we
+    were what when where which while who whom why with would you your yours yourself yourselves""".split())
+    toks = [w.replace("_", " ").replace("-", " ") for w in toks if len(w) > 2 and w not in stop]
+    # prefer bigrams for richer phrasing
+    pairs = [f"{toks[i]} {toks[i+1]}" for i in range(len(toks)-1) if toks[i] != toks[i+1]]
+    ordered = list(dict.fromkeys(pairs + toks))  # keep order, de-dupe
+    return ordered[:max_n] or ["oracle migrations", "performance", "reliability"]
 
-def _sentenceize(phrases, tpl):
-    """Fill a template with the best-available phrases."""
-    p = (phrases + ["the fundamentals", "operational discipline", "measurable outcomes"])
-    return tpl.format(a=p[0], b=p[1], c=p[2], d=p[3], e=p[4])
+def _pick(xs): return random.choice(xs)
 
-def _bullets_from(phrases, verbs, n=4):
-    base = phrases[:]
-    random.shuffle(base)
-    base = base[:n]
-    out = []
-    for i, ph in enumerate(base):
-        v = verbs[i % len(verbs)]
-        ph = ph.replace("_"," ").replace("-"," ")
-        out.append(f"{v} {ph}.")
-    return out
-
-def _cap(text: str, limit: int) -> str:
-    return text if len(text) <= limit else text[:limit-1] + "…"
-
-# ===== Core composer =====
 def compose_post(title, url, brief):
     title = _clean(title)
     brief = _clean(brief)
+    phrases = _phrases(title + " " + brief)
 
-    phrases = _split_phrases(title + " " + brief)
-    if not phrases:
-        phrases = ["oracle migrations", "performance and reliability", "cost and risk"]
-
-    # Hook
-    HOOKS = [
-        "Field note: {a}",
-        "What I’m seeing in real projects: {a}",
-        "Hard truth: {a}",
-        "If you care about uptime and sleep: {a}",
-        "From recent migrations: {a}",
+    # Tone presets (lightly varied each run)
+    openers = [
+        "Quick field note:",
+        "From recent work:",
+        "What I’m seeing a lot:",
+        "Hard-earned lesson:",
+        "If you’re in the middle of this:"
     ]
-    hook = _sentenceize(phrases, random.choice(HOOKS))
-
-    # Why it matters (context)
-    context = _sentenceize(
-        phrases,
-        "This keeps showing up in the wild: teams push fast, complexity creeps in, and {a} becomes the bottleneck. "
-        "When {b} isn’t explicit and {c} is assumed, outages and surprises follow."
-    )
-
-    # My take (opinionated)
-    take = _sentenceize(
-        phrases,
-        "My take: fix {a} and {b} first, not the shiny knobs. Tools help, but outcomes come from designs that make "
-        "{c} measurable, {d} repeatable, and {e} boring to operate."
-    )
-
-    # What to watch (short bullets)
-    watch = _bullets_from(
-        phrases,
-        verbs=["Watch", "Baseline", "Alert on", "Track"],
-        n=3
-    )
-
-    # Practical steps
-    steps = _bullets_from(
-        phrases,
-        verbs=["Start with", "Automate", "Document", "Test"],
-        n=4
-    )
-
-    # Pitfalls
-    pitfalls_raw = [
-        "Chasing parameters before fixing data flow",
-        "Unowned runbooks and tribal knowledge",
-        "No single source of truth for configs",
-        "Skipping DR drills because 'we're busy'"
+    stances = [
+        "The wins come from getting the basics right and repeating them.",
+        "Most pain isn’t exotic—it’s small gaps that add up under load.",
+        "You don’t need heroics; you need clarity, guardrails, and practice.",
+        "The tool matters, but the design and runbooks matter more.",
+        "Simple, observable paths beat clever, fragile ones."
     ]
-    pitfalls = [f"Avoid: {p}." for p in random.sample(pitfalls_raw, k=3)]
 
-    # One prediction
-    prediction = _sentenceize(
-        phrases,
-        "Prediction: within 12–18 months, {a} and {b} become table-stakes and most teams stop debating {c}."
+    # First paragraph (hook + context) — natural, specific
+    topic_hint = phrases[0]
+    p1 = (
+        f"{_pick(openers)} {title or topic_hint}. "
+        f"In real projects, this shows up as unclear ownership, half-done configs, and invisible failure modes. "
+        f"Fixing {phrases[0]} and {phrases[1] if len(phrases)>1 else 'the fundamentals'} early saves a lot of weekend work later."
     )
 
-    # CTA
-    cta = random.choice([
-        "What would you add—or remove—from this list?",
-        "Disagree with my take? Convince me.",
-        "What’s the hidden gotcha I didn’t mention?",
+    # Second paragraph (my take) — opinionated but practical
+    p2 = (
+        f"My take: {_pick(stances)} Start with a crisp definition of done, make it repeatable, "
+        f"and prove it under pressure. Treat {phrases[2] if len(phrases)>2 else 'risk'} and "
+        f"{phrases[3] if len(phrases)>3 else 'cost'} as first-class signals, not afterthoughts."
+    )
+
+    # Decide if bullets are actually helpful this time
+    use_bullets = (len(phrases) >= 6 and random.random() < 0.6)
+    bullets = []
+    if use_bullets:
+        verbs = ["Define", "Automate", "Baseline", "Test", "Document", "Alert on"]
+        picks = phrases[:6]
+        random.shuffle(picks)
+        for i, ph in enumerate(picks[:3]):  # max 3, short and useful
+            v = verbs[i % len(verbs)]
+            ph = ph.replace(".", "")
+            bullets.append(f"{v} {ph} in plain language and make someone accountable.")
+
+    # Gentle CTA (no link, no source)
+    ctas = [
+        "What would you do differently?",
+        "Where have you seen this go wrong?",
         "If you’ve solved this cleanly, I want to learn from you.",
-    ])
+        "Disagree with my take? Tell me why."
+    ]
+    cta = _pick(ctas)
 
-    # Assemble (moderately detailed; no links/attribution)
-    body = (
-        f"{hook}\n\n"
-        f"{context}\n\n"
-        f"My take:\n{take}\n\n"
-        f"What to watch:\n" + "\n".join(f"• {b}" for b in watch) + "\n\n"
-        f"Practical steps:\n" + "\n".join(f"• {b}" for b in steps) + "\n\n"
-        f"Pitfalls:\n" + "\n".join(f"• {b}" for b in pitfalls) + "\n\n"
-        f"{prediction}\n"
-        f"{cta}"
-    )
+    # Assemble with natural flow: 2 short paragraphs, optional bullets, CTA
+    parts = [p1, p2]
+    if bullets:
+        parts.append("\n".join(f"• {b}" for b in bullets))
+    parts.append(cta)
 
-    # Highlights for banner (3 short bullets, no periods)
-    highlights = [b.replace("• ","").rstrip(".") for b in (watch + steps)][:3]
+    body = "\n\n".join(parts)
 
-    # LinkedIn hard cap ~3000 chars; keep comfortably below
-    return _cap(body, 2200), highlights
+    # Highlights for banner (only if we used bullets; otherwise pull key phrases)
+    if bullets:
+        highlights = [b.replace("• ", "").rstrip(".") for b in bullets][:3]
+    else:
+        highlights = [w.title() for w in phrases[:3]]
+
+    # Keep comfortably under LinkedIn’s cap
+    return body[:1800], highlights
