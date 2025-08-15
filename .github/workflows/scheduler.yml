@@ -55,7 +55,7 @@ jobs:
           if [ -d "out" ] && [ "$(ls -A out)" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add out/
+            git add out/ .state/
             git commit -m "Auto: new LinkedIn draft" || exit 0
             git pull --rebase || true
             git push || true
