@@ -63,4 +63,120 @@ def _key_phrases(title: str, brief: str, top_n: int = 6) -> list:
             break
     return uniq
 
-STYLES = ["educational", "opinion", "prediction", "debate", "storytelling", "trendspotting]()
+STYLES = ["educational", "opinion", "prediction", "debate", "storytelling", "trendspotting", "mythbusting", "wishlist"]
+
+def _style_pick():
+    return random.choice(STYLES)
+
+def _hook(style, title, phrases):
+    t = title.strip()
+    any_key = phrases[0] if phrases else ""
+    if style == "educational":
+        return f"📚 {t}"
+    if style == "opinion":
+        return f"💭 My take: {t}"
+    if style == "prediction":
+        year = random.choice(["2026","2027","the next 18 months"])
+        return f"🔮 Prediction: {t} becomes standard by {year}"
+    if style == "debate":
+        return f"🔥 Hot take: {t} is overrated"
+    if style == "storytelling":
+        return f"🧳 From the road: {t}"
+    if style == "trendspotting":
+        return f"📈 I’m seeing a shift: {any_key or t}"
+    if style == "mythbusting":
+        return f"🧨 Myth: {t}"
+    if style == "wishlist":
+        return f"🛠️ If I could change one thing: {any_key or t}"
+    return t
+
+def _insight(style, title):
+    if style == "educational":
+        return "Here’s a concise playbook you can apply this week."
+    if style == "opinion":
+        return "Most teams miss the real bottleneck—and spend time in the wrong place."
+    if style == "prediction":
+        return "Signals are there: vendor roadmaps, customer asks, and what I see in the field."
+    if style == "debate":
+        return "I’ve watched teams pour months into this with little payoff."
+    if style == "storytelling":
+        return "This came up on a recent project—pressure, constraints, and a hard deadline."
+    if style == "trendspotting":
+        return "Across clients, this pattern is showing up more and more."
+    if style == "mythbusting":
+        return "Contrary to popular belief, the common advice here is backwards."
+    if style == "wishlist":
+        return "If vendors and teams nailed this, we’d save weeks and avoid painful rollbacks."
+    return "Quick thoughts you can put to work."
+
+def _bulletize(style, phrases):
+    """Turn key phrases into 3–5 bullets tailored by style."""
+    base = phrases[:5] if phrases else []
+    if not base:
+        base = ["make configs repeatable", "secure the path end-to-end", "measure what matters", "practice failover"]
+    bullets = []
+
+    if style == "educational":
+        for p in base:
+            bullets.append(f"Do this next: {p}.")
+    elif style == "opinion":
+        for p in base:
+            bullets.append(f"Stop ignoring {p}—it costs real time.")
+    elif style == "prediction":
+        for p in base:
+            bullets.append(f"Expect {p} to be automated or policy-enforced.")
+    elif style == "debate":
+        for p in base:
+            bullets.append(f"{p.capitalize()} — useful only after fundamentals are solid.")
+    elif style == "storytelling":
+        for p in base:
+            bullets.append(f"We nearly slipped until we fixed {p}.")
+    elif style == "trendspotting":
+        for p in base:
+            bullets.append(f"Seeing this more: {p}.")
+    elif style == "mythbusting":
+        for p in base:
+            bullets.append(f"Not true: you don’t always need {p}.")
+    elif style == "wishlist":
+        for p in base:
+            bullets.append(f"I wish this were one-click: {p}.")
+    else:
+        for p in base:
+            bullets.append(f"{p.capitalize()} matters.")
+    # Cap to 4 bullets for LinkedIn readability
+    return bullets[:4]
+
+def _cta(style):
+    options = [
+        "Agree or disagree? Tell me why.",
+        "What would you change here?",
+        "Seen this in the wild? Drop your lesson.",
+        "What should I test next?",
+        "If you’ve solved this well, I want to learn from you.",
+    ]
+    # Make debate/prediction a bit spicier
+    if style in ("debate","prediction","mythbusting"):
+        options += [
+            "Prove me wrong in the comments.",
+            "What did I miss?",
+        ]
+    return random.choice(options)
+
+def compose_post(title, url, brief):
+    # Extract topic phrases
+    phrases = _key_phrases(title or "", brief or "")
+    style = _style_pick()
+
+    hook = _hook(style, title or "Latest field note", phrases)
+    insight = _insight(style, title or "")
+
+    bullets = _bulletize(style, phrases)
+    body = (
+        f"{hook}\n\n"
+        f"{insight}\n\n"
+        + "\n".join([f"• {b}" for b in bullets]) +
+        (f"\n\nMore context: {url}" if url else "") +
+        f"\n{_cta(style)}"
+    )
+    highlights = bullets[:3]
+    return body[:1300], highlights
