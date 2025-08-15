@@ -1,8 +1,8 @@
 {
   "source": "rss",
-  "feed": "https://aws.amazon.com/blogs/database/feed/",
-  "title": "Improve AWS DMS continuous replication performance by using column filters to parallelize high-volume tables",
-  "url": "https://aws.amazon.com/blogs/database/improve-aws-dms-continuous-replication-performance-by-using-column-filters-to-parallelize-high-volume-tables/",
-  "created": "2025-08-12 20:50:04+00:00",
-  "text": "In this post, we explore how you can use column filters to divide a high-activity table into multiple tasks during the CDC phase. This approach can accelerate the migration process and reduce target latency."
+  "feed": "https://blogs.oracle.com/database/rss",
+  "title": "Database Unchained: Oracle offers Oracle Database with Ultimate Geographic and Deployment Flexibility",
+  "url": "https://blogs.oracle.com/database/post/database-unchained-oracle-offers-oracle-database-with-ultimate-geographic-and-deployment-flexibility",
+  "created": "2025-08-11 22:00:00+00:00",
+  "text": "Oracle has rolled out a configuration of its flagship product, Oracle Database, in a form that provides automated support for a single logical database that spans regions without requiring the labor-intensive and error-prone activities involved in attempting to span a database across regions manually."
 }

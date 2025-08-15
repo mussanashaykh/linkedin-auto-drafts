@@ -1,11 +1,8 @@
-🔮 AWS DMS in 18 months: Improve AWS DMS continuous replication performance by using column filters to parallelize high-volume tables
+📚 Database Unchained: Oracle offers Oracle Database with Ultimate Geographic and Deployment Flexibility
 
-Parallelism helps, but correctness comes first. I’ve shipped this with strict validation before turning the dial. The direction of travel is clear from roadmaps and asks.
+Quick context from recent work and conversations with teams running this in production.
 
-• Choose a stable filter (tenant_id / region / hash) to avoid collisions. Expect this to become table-stakes.
-• Start with 2–3 tasks per hot table, watch latency + CPU before scaling further. Expect this to become table-stakes.
-• Validate row counts and conflict handling; automate a post-cutover diff. Expect this to become table-stakes.
-• Track end-to-end lag in CloudWatch; alert on trend, not single spikes. Expect this to become table-stakes.
-
-More context: https://aws.amazon.com/blogs/database/improve-aws-dms-continuous-replication-performance-by-using-column-filters-to-parallelize-high-volume-tables/
+• Run small fire-drills until muscle memory forms.
+• Write the happy-path and the fail-path as code.
+• Measure user-visible latency and error budget, not vanity metrics.
 Agree or disagree?
