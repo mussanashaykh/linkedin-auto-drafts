@@ -1,11 +1,11 @@
-🔥 Hot take: Improve AWS DMS continuous replication performance by using column filters to parallelize high-volume tables is overrated
+🧨 Myth busting in AWS DMS: Improve AWS DMS continuous replication performance by using column filters to parallelize high-volume tables
 
-I’ve watched teams pour months into this with little payoff.
+Teams hit CDC lag when one hot table dominates. Splitting the stream with stable filters can move the needle, but only if you validate ordering and conflicts. The common advice is backwards here.
 
-• Column — useful only after fundamentals are solid.
-• Filters — useful only after fundamentals are solid.
-• Improve — useful only after fundamentals are solid.
-• Aws — useful only after fundamentals are solid.
+• Choose a stable filter (tenant_id / region / hash) to avoid collisions.
+• Validate row counts and conflict handling; automate a post-cutover diff.
+• Track end-to-end lag in CloudWatch; alert on trend, not single spikes.
+• Start with 2–3 tasks per hot table, watch latency + CPU before scaling further.
 
 More context: https://aws.amazon.com/blogs/database/improve-aws-dms-continuous-replication-performance-by-using-column-filters-to-parallelize-high-volume-tables/
-Agree or disagree? Tell me why.
+Seen this in the wild?
