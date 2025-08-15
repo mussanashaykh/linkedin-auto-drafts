@@ -3,28 +3,27 @@ name: generate-linkedin-draft
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 9 */3 * *"
+    - cron: "0 9 */3 * *"  # every 3 days
 
 jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pull-requests: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Show repo tree
         run: |
           pwd
           ls -la
-          echo "---- app ----"
-          ls -la app || true
-          echo "---- app/sources ----"
-          ls -la app/sources || true
-          echo "---- app/write ----"
-          ls -la app/write || true
-          echo "---- app/images ----"
-          ls -la app/images || true
+          echo "---- app ----"; ls -la app || true
+          echo "---- app/sources ----"; ls -la app/sources || true
+          echo "---- app/write ----"; ls -la app/write || true
+          echo "---- app/images ----"; ls -la app/images || true
 
       - uses: actions/setup-python@v5
         with:
@@ -39,13 +38,27 @@ jobs:
 
       - name: Run generator (show full traceback)
         run: |
-          set -x
+          set -xe
           python app/main.py
 
-      - name: Commit artifacts (if any)
+      - name: Upload drafts as artifact (always)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: drafts
+          path: out/
+          if-no-files-found: ignore
+
+      - name: Commit artifacts (only if new files exist)
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add out/ || true
-          git commit -m "Auto: new LinkedIn draft" || echo "Nothing to commit"
-          git push
+          set -e
+          if [ -d "out" ] && [ "$(ls -A out)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add out/
+            git commit -m "Auto: new LinkedIn draft" || exit 0
+            git pull --rebase || true
+            git push || true
+          else
+            echo "No drafts to commit."
+          fi
