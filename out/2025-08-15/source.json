@@ -1,8 +1,10 @@
 {
   "source": "rss",
-  "feed": "https://blogs.oracle.com/cloud-infrastructure/rss",
-  "title": "Announcing OCI Landing Zones AI Transaction Monitoring Workload Template",
-  "url": "https://blogs.oracle.com/cloud-infrastructure/post/oci-landing-zones-ai-transaction-monitoring-wrkld",
-  "created": "2025-08-13 09:12:00+00:00",
-  "text": "This new template provides an optimized deployment of AI-driven real-time transaction monitoring for fraud and anomaly detection using Graph Neural Networks and Federated Learning on an optimized OCI tenancy."
+  "feed": "https://blogs.oracle.com/database/rss",
+  "title": "Simplify STIG compliance checks with the new Database Security Assessment Tool (DBSAT) version 4.0",
+  "url": "https://blogs.oracle.com/database/post/dbsat40",
+  "created": "2025-08-13 16:06:00+00:00",
+  "text": "We\u2019re thrilled to introduce DBSAT 4.0, a major leap forward in database security assessment. With DBSAT 4.0, you get expanded checks, support for the latest STIG standards, faster answers, tighter controls, and built-in references to Oracle\u2019s latest security documentation.   You can now quickly spot vulnerabilities, understand exactly what needs attention, and get actionable recommendations every step of the way.",
+  "id": "a02be70d2b4aa8e946e9a76e11fed06d35bbe197",
+  "domain": "blogs.oracle.com"
 }
