@@ -1,42 +1,51 @@
 name: generate-linkedin-draft
 
 on:
-  schedule:
-    - cron: "0 9 */3 * *"   # every 3 days at 09:00 UTC
   workflow_dispatch:
+  schedule:
+    - cron: "0 9 */3 * *"
 
 jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      issues: write
     steps:
       - uses: actions/checkout@v4
+
+      - name: Show repo tree
+        run: |
+          pwd
+          ls -la
+          echo "---- app ----"
+          ls -la app || true
+          echo "---- app/sources ----"
+          ls -la app/sources || true
+          echo "---- app/write ----"
+          ls -la app/write || true
+          echo "---- app/images ----"
+          ls -la app/images || true
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - run: pip install -r requirements.txt
-      - name: Run generator
-        run: python app/main.py
-      - name: Commit artifacts
+
+      - name: Upgrade pip and install deps
+        run: |
+          python -V
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+          python -m pip freeze
+
+      - name: Run generator (show full traceback)
+        run: |
+          set -x
+          python app/main.py
+
+      - name: Commit artifacts (if any)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add out/
+          git add out/ || true
           git commit -m "Auto: new LinkedIn draft" || echo "Nothing to commit"
           git push
-      - name: Open/append issue with draft (optional)
-        run: |
-          LAST_DIR=$(ls -dt out/* | head -1 || true)
-          if [ -d "$LAST_DIR" ]; then
-            TITLE=$(jq -r .title "$LAST_DIR/source.json")
-            echo "### New draft: $TITLE" > body.md
-            echo "" >> body.md
-            echo '```' >> body.md
-            cat "$LAST_DIR/post.txt" >> body.md
-            echo '```' >> body.md
-            gh issue create --title "Draft: $TITLE" --body-file body.md || true
-          fi
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
