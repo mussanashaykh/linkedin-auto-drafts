@@ -31,4 +31,3 @@ def fetch_reddit(hours=72, per_sub=30):
                 "text": (d.get("selftext","") or "")[:2000]
             })
     return items
-
