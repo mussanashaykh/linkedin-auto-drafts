@@ -46,8 +46,9 @@ def make_banner(title, highlights, out_path):
         d.text((100, y), f"• {hl}", font=_font(30), fill=(35, 38, 55))
         y += 44
 
-    # Footer tag
-    d.text((80, H-70), "Oracle • Cloud • Migrations", font=_font(24), fill=(90, 95, 120))
+
+d.text((80, H-70), "Sheikh Musanna • Oracle • Cloud • Migrations", font=_font(24), fill=(90, 95, 120))
+
 
     img.save(out_path)
     return out_path
