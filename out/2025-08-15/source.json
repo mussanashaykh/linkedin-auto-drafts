@@ -1,8 +1,8 @@
 {
   "source": "rss",
-  "feed": "https://blogs.oracle.com/database/rss",
-  "title": "Building the \u2018Never Down\u2019 Enterprise: The Oracle GDS Advantage",
-  "url": "https://blogs.oracle.com/database/post/building-the-never-down-enterprise-the-oracle-gds-advantage",
-  "created": "2025-08-12 00:02:00+00:00",
-  "text": "The Transformational Power of Oracle Global Data Services"
+  "feed": "https://blogs.oracle.com/cloud-infrastructure/rss",
+  "title": "Supercharge Your AI Workloads with Oracle Cloud and DDN",
+  "url": "https://blogs.oracle.com/cloud-infrastructure/post/supercharge-ai-workloads-with-ddn-infinia-on-oci",
+  "created": "2025-08-14 16:55:00+00:00",
+  "text": "This blog shares the performance benchmark results of running DDN Infinia, a high performance object storage on OCI IaaS Compute shape (BM.DenseIO.E5.128) and comparison of running DDN solution on OCI is cheaper than other CSPs."
 }
