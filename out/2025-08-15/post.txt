@@ -1,11 +1,11 @@
-Field note: Improve AWS DMS continuous replication performance by using column filters to parallelize high-volume tables
+🔥 Hot take: Improve AWS DMS continuous replication performance by using column filters to parallelize high-volume tables is overrated
 
-In this post, we explore how you can use column filters to divide a high-activity table into multiple tasks during the CDC phase
+I’ve watched teams pour months into this with little payoff.
 
-• Keep configs repeatable (IaC) and versioned.
-• Prefer SSL/TLS everywhere; verify wallet/keystore early.
-• Separate initial load (DMS) from CDC (GoldenGate) for sanity.
-• Automate logs & metrics; test DR like you mean it.
+• Column — useful only after fundamentals are solid.
+• Filters — useful only after fundamentals are solid.
+• Improve — useful only after fundamentals are solid.
+• Aws — useful only after fundamentals are solid.
 
 More context: https://aws.amazon.com/blogs/database/improve-aws-dms-continuous-replication-performance-by-using-column-filters-to-parallelize-high-volume-tables/
-What’s one gotcha you’ve hit on Oracle migrations lately?
+Agree or disagree? Tell me why.
