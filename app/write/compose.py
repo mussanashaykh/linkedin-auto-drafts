@@ -1,7 +1,7 @@
 import re, random
 
 # -----------------------
-# Utility
+# Small helpers
 # -----------------------
 def _clean(text: str) -> str:
     text = (text or "").strip()
@@ -18,35 +18,35 @@ def _contains(text: str, words: list) -> bool:
     return any((" " + w.lower() + " ") in t for w in words)
 
 # -----------------------
-# Topic packs (expandable)
+# Topic packs (broad, expandable)
 # -----------------------
 TOPIC_PACKS = [
     {
         "keys": ["dms","database migration service","cdc","column filter","parallel"],
         "name": "AWS DMS",
         "narratives": [
-            "Teams hit CDC lag when one hot table dominates. Splitting the stream with stable filters can move the needle, but only if you validate ordering and conflicts.",
-            "Parallelism helps, but correctness comes first. I’ve shipped this with strict validation before turning the dial."
+            "Teams hit CDC lag when one hot table dominates. Splitting the stream with stable filters can help, but only after you validate ordering and conflict behavior.",
+            "Parallelism is useful, but correctness comes first. I only scale out after strict validation and baseline metrics."
         ],
         "bullets": [
-            "Choose a stable filter (tenant_id / region / hash) to avoid collisions.",
-            "Start with 2–3 tasks per hot table, watch latency + CPU before scaling further.",
-            "Validate row counts and conflict handling; automate a post-cutover diff.",
-            "Track end-to-end lag in CloudWatch; alert on trend, not single spikes."
+            "Choose a stable filter (tenant_id / region / hash) to avoid collisions",
+            "Start with 2–3 tasks per hot table; watch latency and CPU before scaling",
+            "Validate row counts and conflicts; automate a post-cutover diff",
+            "Track end-to-end lag; alert on trend, not single spikes"
         ],
     },
     {
         "keys": ["goldengate","ogg","trail","extract","replicat"],
         "name": "Oracle GoldenGate",
         "narratives": [
-            "GoldenGate shines when initial load and CDC are treated as different beasts. Trail sizing, checkpoint hygiene, and cert rotation aren’t ‘nice to have’—they’re uptime.",
-            "Lag surprises usually trace back to I/O or network, not a single magic parameter."
+            "GoldenGate shines when initial load and CDC are treated as different beasts. Trail sizing, checkpoint hygiene, and cert rotation are uptime levers.",
+            "Lag surprises usually trace back to I/O or network—not one magic parameter."
         ],
         "bullets": [
-            "Separate initial load from CDC with different tunables and runbooks.",
-            "Size trail files conservatively; keep filesystem latency predictable.",
-            "Enable TLS; store wallets/keys as code with rotation on calendar.",
-            "Alert on lag drift (baseline + threshold), not just absolute numbers."
+            "Separate initial load from CDC with different tunables and runbooks",
+            "Size trail files conservatively; keep filesystem latency predictable",
+            "Enable TLS; store wallets/keys as code with rotation on calendar",
+            "Alert on lag drift from a baseline, not just absolute values"
         ],
     },
     {
@@ -57,10 +57,10 @@ TOPIC_PACKS = [
             "Most trouble I see is shared parameter groups and ad-hoc tweaks nobody can reproduce."
         ],
         "bullets": [
-            "Use dedicated parameter groups per env; forbid manual drift.",
-            "Store creds in Secrets Manager and rotate on a schedule.",
-            "Enable Performance Insights and CW Logs from day 0.",
-            "Set storage autoscaling guardrails and alert on IOPS/latency."
+            "Use dedicated parameter groups per environment; forbid manual drift",
+            "Store credentials in Secrets Manager and rotate on a schedule",
+            "Enable Performance Insights and CloudWatch Logs from day 0",
+            "Set storage autoscaling guardrails; alert on IOPS/latency"
         ],
     },
     {
@@ -71,24 +71,24 @@ TOPIC_PACKS = [
             "People overestimate RTO until they measure it under stress."
         ],
         "bullets": [
-            "Automate snapshot copy + KMS sharing between regions/accounts.",
-            "Script promotion and DNS cutover; record real RTO/RPO.",
-            "Test quarterly; log every surprise and fix it before next drill.",
-            "Keep runbooks alongside dashboards for one-screen execution."
+            "Automate snapshot copy and KMS sharing between regions/accounts",
+            "Script promotion and DNS cutover; record real RTO/RPO",
+            "Test quarterly; log every surprise and fix it before the next drill",
+            "Keep runbooks alongside dashboards for one-screen execution"
         ],
     },
     {
         "keys": ["kms","tls","ssl","wallet","keystore","encryption","mfa"],
         "name": "Security",
         "narratives": [
-            "Enable TCPS early so wallet and DN issues appear before go-live. Security debt compounds when it’s postponed.",
-            "Policy > heroics: lock TLS versions and ciphers; rotate before expiry."
+            "Enable TCPS early so wallet and DN issues show up before go-live. Security debt compounds when it’s postponed.",
+            "Policy over heroics: lock TLS versions and ciphers; rotate before expiry."
         ],
         "bullets": [
-            "Pin CA chains and verify DN matching in both ends.",
-            "Enforce TLS min version/ciphers via param groups/policies.",
-            "Document wallet paths, owners, and renewal steps.",
-            "Alert on cert expiry 30/14/7 days out."
+            "Pin CA chains and verify DN matching on both ends",
+            "Enforce TLS min version/ciphers via param groups or policies",
+            "Document wallet paths, owners, and renewal steps",
+            "Alert on cert expiry at 30/14/7 days"
         ],
     },
     {
@@ -99,24 +99,24 @@ TOPIC_PACKS = [
             "Most teams don’t tag consistently—then wonder where the money went."
         ],
         "bullets": [
-            "Tag consistently (owner, env, system, cost-center) and enforce with policy.",
-            "Alert on weekly spend deltas, not end-of-month surprises.",
-            "Right-size storage/IOPS based on observed 95th percentile.",
-            "Archive logs/objects with lifecycle rules day-one."
+            "Tag consistently (owner, env, system, cost-center) and enforce with policy",
+            "Alert on weekly spend deltas, not end-of-month surprises",
+            "Right-size storage/IOPS by observed 95th percentile",
+            "Archive logs/objects with lifecycle rules on day one"
         ],
     },
     {
-        "keys": ["vpc","endpoint","dns","route 53","private link","transit"],
+        "keys": ["vpc","endpoint","dns","route 53","privatelink","transit","resolver"],
         "name": "Networking",
         "narratives": [
-            "If DNS and routes aren’t crisp, everything feels random. Private endpoints and clear forwarding rules keep diagnostics sane.",
+            "If DNS and routes aren’t crisp, everything feels random. Private endpoints and explicit forwarding rules keep diagnostics sane.",
             "I’ve seen more outages from DNS assumptions than from code bugs."
         ],
         "bullets": [
-            "Define conditional forwarding for private zones explicitly.",
-            "Use interface endpoints for control planes; test from each subnet.",
-            "Document allowed egress and ephemeral port behavior.",
-            "Probe health paths continuously and alert on DNS drift."
+            "Define conditional forwarding for private zones explicitly",
+            "Use interface endpoints for control planes; test from each subnet",
+            "Document allowed egress and ephemeral port behavior",
+            "Probe health paths continuously and alert on DNS drift"
         ],
     },
 ]
@@ -128,15 +128,21 @@ FALLBACK = {
         "Most outages aren’t exotic—they’re basics left implicit."
     ],
     "bullets": [
-        "Write the happy-path and the fail-path as code.",
-        "Measure user-visible latency and error budget, not vanity metrics.",
-        "Automate config drift detection; close the loop.",
-        "Run small fire-drills until muscle memory forms."
+        "Write the happy-path and the fail-path as code",
+        "Measure user-visible latency and error budget, not vanity metrics",
+        "Automate config drift detection and close the loop",
+        "Run small fire-drills until muscle memory forms"
     ],
 }
 
-STYLES = ["educational","opinion","prediction","debate","storytelling","trendspotting","mythbusting","wishlist"]
+STYLES = [
+    "educational","opinion","prediction","debate",
+    "storytelling","trendspotting","mythbusting","wishlist"
+]
 
+# -----------------------
+# Core composition
+# -----------------------
 def _pick_pack(title: str, brief: str):
     t = (title + " " + brief).lower()
     for pack in TOPIC_PACKS:
@@ -149,14 +155,14 @@ def _style():
 
 def _hook(style: str, title: str, topic_name: str):
     title = title.strip()
-    if style == "educational":  return f"📚 {title}"
-    if style == "opinion":      return f"💭 My take on {topic_name}: {title}"
-    if style == "prediction":   return f"🔮 {topic_name} in 18 months: {title}"
-    if style == "debate":       return f"🔥 Unpopular opinion: {title}"
-    if style == "storytelling": return f"🧳 From the field: {title}"
-    if style == "trendspotting":return f"📈 I’m seeing a shift in {topic_name}: {title}"
-    if style == "mythbusting":  return f"🧨 Myth busting in {topic_name}: {title}"
-    if style == "wishlist":     return f"🛠️ What I wish were true: {title}"
+    if style == "educational":   return f"📚 {title}"
+    if style == "opinion":       return f"💭 My take on {topic_name}: {title}"
+    if style == "prediction":    return f"🔮 {topic_name} in 18 months: {title}"
+    if style == "debate":        return f"🔥 Unpopular opinion: {title}"
+    if style == "storytelling":  return f"🧳 From the field: {title}"
+    if style == "trendspotting": return f"📈 I’m seeing a shift in {topic_name}: {title}"
+    if style == "mythbusting":   return f"🧨 Myth in {topic_name}: {title}"
+    if style == "wishlist":      return f"🛠️ I wish this were easier: {title}"
     return title
 
 def _narrative(style: str, narratives: list):
@@ -164,9 +170,9 @@ def _narrative(style: str, narratives: list):
     if style == "opinion":
         return base + " This is where teams waste the most time."
     if style == "prediction":
-        return base + " The direction of travel is clear from roadmaps and asks."
+        return base + " Roadmaps and customer asks point the same way."
     if style == "debate":
-        return base + " Fight me in the comments if you disagree."
+        return base + " Change my mind if you disagree."
     if style == "storytelling":
         return base + " We hit a wall, made a call, and shipped."
     if style == "trendspotting":
@@ -178,7 +184,7 @@ def _narrative(style: str, narratives: list):
     return base
 
 def _bullets(style: str, bullets: list):
-    # Always full sentences with verbs; pick 3–4
+    # Full sentences with verbs; pick 3–4
     chosen = bullets[:]
     random.shuffle(chosen)
     chosen = chosen[: random.choice([3,3,4])]
@@ -186,7 +192,7 @@ def _bullets(style: str, bullets: list):
     for b in chosen:
         b = b.rstrip(".")
         if style == "debate":
-            out.append(f"{b}. Prove it with data before investing more.")
+            out.append(f"{b}. Prove value with data before investing more.")
         elif style == "prediction":
             out.append(f"{b}. Expect this to become table-stakes.")
         elif style == "opinion":
@@ -218,13 +224,18 @@ def compose_post(title, url, brief):
 
     hook = _hook(style, title, pack["name"])
     narrative = _narrative(style, pack["narratives"])
+    if not narrative or len(narrative.split()) < 8:
+        narrative = "Quick context from recent work and conversations with teams running this in production."
+
     bullets = _bullets(style, pack["bullets"])
+
     body = (
         f"{hook}\n\n"
         f"{narrative}\n\n"
         + "\n".join([f"• {b}" for b in bullets]) +
-        (f"\n\nMore context: {url}" if url else "") +
-        f"\n{_cta(style)}"
+        "\n" + _cta(style)
     )
-    highlights = [b.replace("Prove it with data before investing more.","").replace(".","") for b in bullets][:3]
+
+    # highlights for banner (short, no periods)
+    highlights = [b.replace(".", "") for b in bullets][:3]
     return body[:1300], highlights
