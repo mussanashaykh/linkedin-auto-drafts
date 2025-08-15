@@ -1,5 +1,6 @@
 import feedparser, time
 from datetime import datetime, timedelta, timezone
+
 FEEDS = [
   "https://blogs.oracle.com/database/rss",
   "https://blogs.oracle.com/cloud-infrastructure/rss",
@@ -7,16 +8,15 @@ FEEDS = [
   "https://aws.amazon.com/architecture/feed/",
 ]
 
-def get_rss_items(hours=168):
+def fetch_rss(hours=168):
     cutoff = datetime.now(timezone.utc) - timedelta(hours=hours)
     out=[]
     for url in FEEDS:
         feed = feedparser.parse(url)
         for e in feed.entries:
-            # robust published parsing
             published = None
             for key in ("published_parsed","updated_parsed"):
-                t = getattr(e, key, None)
+                t = getattr(e, key, None) or e.get(key)
                 if t:
                     published = datetime.fromtimestamp(time.mktime(t), tz=timezone.utc)
                     break
@@ -25,9 +25,9 @@ def get_rss_items(hours=168):
             out.append({
                 "source":"rss",
                 "feed":url,
-                "title":e.title,
-                "url":e.link,
-                "created":published.isoformat(),
-                "text": getattr(e, "summary", "")[:2000]
+                "title": (e.get("title","") or "").strip(),
+                "url": e.get("link",""),
+                "created": published,
+                "text": (e.get("summary","") or "")[:2000]
             })
     return out
