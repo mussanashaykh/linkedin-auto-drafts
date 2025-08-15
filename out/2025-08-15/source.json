@@ -1,8 +1,8 @@
 {
   "source": "rss",
-  "feed": "https://blogs.oracle.com/cloud-infrastructure/rss",
-  "title": "Announcing Cross-Region Replication for OCI Secrets",
-  "url": "https://blogs.oracle.com/cloud-infrastructure/post/announcing-crossregion-replication-oci-secrets",
-  "created": "2025-08-14 09:02:00+00:00",
-  "text": "Effortlessly safeguard and access secrets across regions with built-in replication that boosts resilience, simplifies operations, and eliminates custom sync work."
+  "feed": "https://blogs.oracle.com/database/rss",
+  "title": "Database Unchained: Oracle offers Oracle Database with Ultimate Geographic and Deployment Flexibility",
+  "url": "https://blogs.oracle.com/database/post/database-unchained-oracle-offers-oracle-database-with-ultimate-geographic-and-deployment-flexibility",
+  "created": "2025-08-11 22:00:00+00:00",
+  "text": "Oracle has rolled out a configuration of its flagship product, Oracle Database, in a form that provides automated support for a single logical database that spans regions without requiring the labor-intensive and error-prone activities involved in attempting to span a database across regions manually."
 }
