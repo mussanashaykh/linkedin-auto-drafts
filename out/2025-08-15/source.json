@@ -1,0 +1,8 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Improve AWS DMS continuous replication performance by using column filters to parallelize high-volume tables",
+  "url": "https://aws.amazon.com/blogs/database/improve-aws-dms-continuous-replication-performance-by-using-column-filters-to-parallelize-high-volume-tables/",
+  "created": "2025-08-12 20:50:04+00:00",
+  "text": "In this post, we explore how you can use column filters to divide a high-activity table into multiple tasks during the CDC phase. This approach can accelerate the migration process and reduce target latency."
+}
