@@ -1,10 +1,8 @@
 import os, json
 from datetime import datetime, timezone
-from sources.reddit import fetch_reddit
-from sources.reddit_people import fetch_reddit_people
-from sources.rss import fetch_rss
-from sources.qa import fetch_qa
-from write.summarize import top_item, extractive_brief
+
+from fetch import get_candidates, pick_item
+from write.summarize import extractive_brief
 from write.compose import compose_post
 from images.banner import make_banner
 
@@ -12,19 +10,18 @@ def ensure_dir(p):
     os.makedirs(p, exist_ok=True)
 
 def run():
-    items = []
-    items += fetch_reddit(hours=72)            # general tech posts
-    items += fetch_reddit_people(hours=168)    # first-person posts
-    items += fetch_rss(hours=168)              # blogs (diverse)
-    items += fetch_qa(hours=168)               # StackOverflow + HN
+    candidates = get_candidates()
+    if not candidates:
+        print("No candidates fetched.")
+        return 0
 
-    pick = top_item(items)
+    pick = pick_item(candidates)
     if not pick:
-        print("No suitable items.")
+        print("No suitable item.")
         return 0
 
     brief = extractive_brief(pick)
-    body, highlights = compose_post(pick["title"], pick.get("url"), brief)
+    body, highlights = compose_post(pick.get("title",""), pick.get("url"), brief)
 
     stamp = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     outdir = os.path.join("out", stamp)
@@ -36,7 +33,7 @@ def run():
     with open(os.path.join(outdir, "source.json"), "w", encoding="utf-8") as f:
         json.dump(pick, f, default=str, indent=2)
 
-    make_banner(pick["title"], highlights, os.path.join(outdir, "banner.png"))
+    make_banner(pick.get("title",""), highlights, os.path.join(outdir, "banner.png"))
     print("Draft created at", outdir)
     return 0
 
