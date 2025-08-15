@@ -1,10 +1,10 @@
 {
-  "source": "rss",
-  "feed": "https://blogs.oracle.com/database/rss",
-  "title": "Simplify STIG compliance checks with the new Database Security Assessment Tool (DBSAT) version 4.0",
-  "url": "https://blogs.oracle.com/database/post/dbsat40",
-  "created": "2025-08-13 16:06:00+00:00",
-  "text": "We\u2019re thrilled to introduce DBSAT 4.0, a major leap forward in database security assessment. With DBSAT 4.0, you get expanded checks, support for the latest STIG standards, faster answers, tighter controls, and built-in references to Oracle\u2019s latest security documentation.   You can now quickly spot vulnerabilities, understand exactly what needs attention, and get actionable recommendations every step of the way.",
-  "id": "a02be70d2b4aa8e946e9a76e11fed06d35bbe197",
-  "domain": "blogs.oracle.com"
+  "source": "stackoverflow",
+  "feed": "https://stackoverflow.com/feeds/tag?tagnames=rds&sort=newest",
+  "domain": "stackoverflow.com",
+  "title": "Kafka Debezium Connectors aurora DB lost connection, taking 14mins exactly to recover [closed]",
+  "url": "https://stackoverflow.com/questions/79730451/kafka-debezium-connectors-aurora-db-lost-connection-taking-14mins-exactly-to-re",
+  "created": "2025-08-09 15:49:20+00:00",
+  "text": "<p>I am using strimzi kafka setup in kubernetes production. I have 5 connect pods, 1 strimzi operator and ~9 connectors distributed across these 5 pods.</p>\n<p>Some pods are getting below error and only connectors hosted on those pods are going down and recovering on its own exactly after 14 minutes.</p>\n<pre><code>INFO: Keepalive: Trying to restore lost connection to aurora-db-prod.cluster-randomstring.us-east-1.rds.amazonaws.com:3306\n</code></pre>\n<p>However, other pods which did not have this message, continues to receive messages just fine.\nusually this happens in 3 pods, and ends up impact almost 6-7 connectors, and after 14 minutes exactly it recovers without losing any data by starting from where it stopped on last offset.</p>\n<p>One of these connectors is very crucial and we can not expect it to be down for more than 3 minutes as it is customer impacting.</p>\n<p>ChatGPT recommended adding below for faster recovery, but it didn't help either:</p>\n<pre><code>    # ---- Fast Recovery Timeouts ----\n    database.connectionTimeout.ms: 10000               # Fail connection attempts fast (default: 30000)\n    database.connect.backoff.max.ms: 30000              # Cap retry gap to 30s (default: 120000)\n    # ---- Connector-Level Retries ----\n    connect.max.retries: 30                            # 20 restart attempts (default: 3)\n    connect.backoff.initial.delay.ms: 1000             # Small delay before restart\n    connect.backoff.max.delay.ms: 8000                 # Cap restart backoff to 8s (default: 60000)\n    retriable.restart.connector.wait.ms: 5000\n</code></pre>\n<p>Below is the full config of one of my connector.</p>\n<h1>NOTE: Except for the last few configs, all other configs are same for all connectors. Only last 8 configs are connector specific.</h1>\n<pre><code>KafkaConnectors:\n  dbc-mysql-tables-connector:\n    enabled: true\n    annotations: {}\n    labels:\n      strimzi.io/cluster: debezium-connect-cluster\n    spec:\n      class: io.debezium.connector.mysql.My",
+  "id": "ab2de8a9eb930c7c81fd7c35c7b74442de3748c3"
 }
