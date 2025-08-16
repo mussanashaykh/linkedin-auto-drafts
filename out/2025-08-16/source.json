@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "How Wiz achieved near-zero downtime for Amazon Aurora PostgreSQL major version upgrades at scale using Aurora Blue/Green Deployments",
+  "url": "https://aws.amazon.com/blogs/database/how-wiz-achieved-near-zero-downtime-for-amazon-aurora-postgresql-major-version-upgrades-at-scale-using-aurora-blue-green-deployments/",
+  "created": "2025-08-11 21:40:17+00:00",
+  "text": "Wiz, a leading cloud security company, identifies and removes risks across major cloud platforms. Our agent-less scanner processes tens of billions of daily cloud resource metadata entries. This demands high-performance, low-latency processing, making our Amazon Aurora PostgreSQL-Compatible Edition database, serving hundreds of microservices at scale, a critical component of our architecture. In this post, we share how we upgraded our Aurora PostgreSQL database from version 14 to 16 with near-zero downtime using Amazon Aurora Blue/Green Deployments.",
+  "id": "c85de85aac63b5f303cfaae2b6cd93cb01438100",
+  "domain": "aws.amazon.com"
+}
