@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Vibe code with AWS databases using Vercel v0",
+  "url": "https://aws.amazon.com/blogs/database/vibe-code-with-aws-databases-using-vercel-v0/",
+  "created": "2025-08-19 17:05:21+00:00",
+  "text": "In this post, we explore how you can use Vercel\u2019s v0 generative UI to build applications with a modern UI for AWS purpose-built databases such as Amazon Aurora, Amazon DynamoDB, Amazon Neptune, and Amazon ElastiCache.",
+  "id": "020c85754ab8c4de609a633a18bd73fa7fbab9a9",
+  "domain": "aws.amazon.com"
+}
