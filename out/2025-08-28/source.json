@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Gracefully handle failed AWS Lambda events from Amazon DynamoDB Streams",
+  "url": "https://aws.amazon.com/blogs/database/gracefully-handle-failed-aws-lambda-events-from-amazon-dynamodb-streams/",
+  "created": "2025-08-25 17:06:40+00:00",
+  "text": "In this post, we show how to capture and retain failed stream events for later analysis or replay using Amazon S3 as a durable destination. We compare this approach with the traditional Amazon SQS dead-letter queue (DLQ) pattern, and explain when and why Amazon S3 is a preferred option.",
+  "id": "4048db4a5aa3b1411829fc0ababf3f4ba79505e7",
+  "domain": "aws.amazon.com"
+}
