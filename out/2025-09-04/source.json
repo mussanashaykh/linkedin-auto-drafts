@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Automating Amazon RDS and Amazon Aurora recommendations via notification with AWS Lambda, Amazon EventBridge, and Amazon SES",
+  "url": "https://aws.amazon.com/blogs/database/automating-amazon-rds-and-amazon-aurora-recommendations-via-notification-with-aws-lambda-amazon-eventbridge-and-amazon-ses/",
+  "created": "2025-09-02 20:18:19+00:00",
+  "text": "In this post, we walk through a solution that automates the notification of Amazon RDS and Aurora recommendations through email using AWS Lambda, Amazon EventBridge and Amazon Simple Email Service (Amazon SES).",
+  "id": "8c95508d029a0c9762a068f3b218b4a57c678f84",
+  "domain": "aws.amazon.com"
+}
