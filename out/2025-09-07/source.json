@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Automating vector embedding generation in Amazon Aurora PostgreSQL with Amazon Bedrock",
+  "url": "https://aws.amazon.com/blogs/database/automating-vector-embedding-generation-in-amazon-aurora-postgresql-with-amazon-bedrock/",
+  "created": "2025-09-05 20:31:18+00:00",
+  "text": "In this post, we explore several approaches for automating the generation of vector embedding in Amazon Aurora PostgreSQL-Compatible Edition when data is inserted or modified in the database. Each approach offers different trade-offs in terms of complexity, latency, reliability, and scalability, allowing you to choose the best fit for your specific application needs.",
+  "id": "32f3c5e437c811f115f3e2c0c1e4a76e93dcee02",
+  "domain": "aws.amazon.com"
+}
