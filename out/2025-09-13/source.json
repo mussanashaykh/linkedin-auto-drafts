@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://blogs.oracle.com/cloud-infrastructure/rss",
+  "title": "Behind the Scenes: Scale your NVIDIA GB200 NVL72 deployments with dedicated OCI APIs",
+  "url": "https://blogs.oracle.com/cloud-infrastructure/post/behind-the-scenes-nvidia-gb200-nvl72-oci-apis",
+  "created": "2025-09-11 15:00:00+00:00",
+  "text": "OCI built a Supercomputer for AI workloads, but how has it simplified all that GPU management overhead? Explore how OCI APIs do the heavy lifting in GB200 NVL72 deployments for AI workloads.",
+  "id": "b479c2cb909695c970c860edabb80808eb045c04",
+  "domain": "blogs.oracle.com"
+}

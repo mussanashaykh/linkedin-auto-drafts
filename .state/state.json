@@ -1,5 +1,6 @@
 {
   "recent_ids": [
+    "b479c2cb909695c970c860edabb80808eb045c04",
     "408c7765a92c777efe7061db25f1cd5b34387cbf",
     "32f3c5e437c811f115f3e2c0c1e4a76e93dcee02",
     "8c95508d029a0c9762a068f3b218b4a57c678f84",
@@ -14,11 +15,11 @@
     "a02be70d2b4aa8e946e9a76e11fed06d35bbe197"
   ],
   "recent_domains": [
+    "blogs.oracle.com",
     "container-registry.oracle.com",
     "aws.amazon.com",
     "aws.amazon.com",
-    "blogs.oracle.com",
-    "stackoverflow.com"
+    "blogs.oracle.com"
   ],
   "max_ids": 60,
   "max_domains": 5
