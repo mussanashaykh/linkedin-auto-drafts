@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://blogs.oracle.com/cloud-infrastructure/rss",
+  "title": "Oracle Cloud Infrastructure and Microsoft Azure Expand Oracle Database Services and Add More Supported Regions",
+  "url": "https://blogs.oracle.com/cloud-infrastructure/post/oci-and-azure-expand-db-services-and-new-regions",
+  "created": "2025-09-15 20:30:00+00:00",
+  "text": "This is a blog announcing the general availability of Base Database Service for Oracle Database@Azure, as well as, new regions for Oracle Database@Azure.",
+  "id": "58b01e591184f6dc64c77a7517c345d2dc172ee2",
+  "domain": "blogs.oracle.com"
+}
