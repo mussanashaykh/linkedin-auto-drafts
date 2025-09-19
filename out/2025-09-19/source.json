@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://blogs.oracle.com/database/rss",
+  "title": "Data Redaction in Oracle Database 23ai: Built for the AI era and real-world business applications",
+  "url": "https://blogs.oracle.com/database/post/redaction-23ai",
+  "created": "2025-09-13 04:52:00+00:00",
+  "text": "In today\u2019s data-driven landscape, organizations manage large volumes of sensitive data, including Personally Identifiable Information (PII), Protected Health Information (PHI), and financial records that must be protected from end-users who don\u2019t have a business need for that information. Data Redaction helps limit exposure to sensitive data by dynamically redacting sensitive data in the query results, without modifying the stored values or requiring application changes.",
+  "id": "8b4eb73c920ab3d29a31e34c524151d3b1db5922",
+  "domain": "blogs.oracle.com"
+}

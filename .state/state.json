@@ -1,5 +1,6 @@
 {
   "recent_ids": [
+    "8b4eb73c920ab3d29a31e34c524151d3b1db5922",
     "58b01e591184f6dc64c77a7517c345d2dc172ee2",
     "b479c2cb909695c970c860edabb80808eb045c04",
     "408c7765a92c777efe7061db25f1cd5b34387cbf",
@@ -18,8 +19,8 @@
   "recent_domains": [
     "blogs.oracle.com",
     "blogs.oracle.com",
+    "blogs.oracle.com",
     "container-registry.oracle.com",
-    "aws.amazon.com",
     "aws.amazon.com"
   ],
   "max_ids": 60,
