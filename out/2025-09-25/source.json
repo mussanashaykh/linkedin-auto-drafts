@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Raising the bar on Amazon DynamoDB data modeling",
+  "url": "https://aws.amazon.com/blogs/database/raising-the-bar-on-amazon-dynamodb-data-modeling/",
+  "created": "2025-09-23 21:01:10+00:00",
+  "text": "In April 2025, we introduced the Amazon DynamoDB data modeling tool for the Model Context Protocol (MCP) server. The tool guides you through a conversation, collects your requirements, and produces a data model that includes tables, indexes, and cost considerations. In this post, we show you how we built this automated evaluation framework and how it helped us deliver reliable DynamoDB data modeling guidance at scale.",
+  "id": "e6f5046a16bb0e3039fdb01080f1a763afb95b33",
+  "domain": "aws.amazon.com"
+}
