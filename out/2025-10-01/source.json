@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://blogs.oracle.com/cloud-infrastructure/rss",
+  "title": "Enhancing Checking and Posting (CAPS) Application Through Oracle Cloud Infrastructure (OCI)",
+  "url": "https://blogs.oracle.com/cloud-infrastructure/post/enhancing-simphony-caps-with-oci",
+  "created": "2025-09-30 05:00:00+00:00",
+  "text": "In this blog, we will explore the strategic benefits of moving CAPS to OCI and dive into the services that enables high availability and flexibility. We\u2019ll also discuss real-world scenarios illustrating OCI\u2019s agility \u2013 from handling stadium event surges to enabling hotel chains to run simultaneous promotions. Finally, we highlight key OCI services (like Terraform automation, Monitoring/Logging, and Autoscaling) that empower hospitality IT teams to manage CAPS deployments more effectively.",
+  "id": "0658088ea8f1f0f17095c4db62eb22bdf433e49d",
+  "domain": "blogs.oracle.com"
+}
