@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Set up proactive monitoring for Amazon RDS for SQL Server with real-time Slack notifications",
+  "url": "https://aws.amazon.com/blogs/database/set-up-proactive-monitoring-for-amazon-rds-for-sql-server-with-real-time-slack-notifications/",
+  "created": "2025-10-02 22:04:33+00:00",
+  "text": "In this post, we demonstrate how to build an efficient, serverless monitoring system for Amazon RDS for SQL Server using AWS native services and Slack integration.",
+  "id": "fc92f0eaaa2e4a1fc7b77a2baf76d755078c4716",
+  "domain": "aws.amazon.com"
+}
