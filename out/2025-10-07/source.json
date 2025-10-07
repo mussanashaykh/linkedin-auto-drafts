@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://blogs.oracle.com/cloud-infrastructure/rss",
+  "title": "Behind the Scenes: Disaster Recovery in Minutes with HSM Write-Behind Log",
+  "url": "https://blogs.oracle.com/cloud-infrastructure/post/behind-the-scenes-disaster-recovery-hsm",
+  "created": "2025-09-30 14:00:00+00:00",
+  "text": "Disaster recovery cut from days to minutes: Discover how Oracle\u2019s HSM Write-Behind Log snapshots enable faster failovers and stronger data protection for customers.",
+  "id": "f5e670ab9f42c969a4889f671f659ee2e36f9a7e",
+  "domain": "blogs.oracle.com"
+}
