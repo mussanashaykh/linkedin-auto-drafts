@@ -1,0 +1,10 @@
+{
+  "source": "stackoverflow",
+  "feed": "https://stackoverflow.com/feeds/tag?tagnames=ssl&sort=newest",
+  "domain": "stackoverflow.com",
+  "title": "Got a https licence for my webapp and reconfigured the frontend for it, but now the backend no longer works, no matter what I do [closed]",
+  "url": "https://stackoverflow.com/questions/79784271/got-a-https-licence-for-my-webapp-and-reconfigured-the-frontend-for-it-but-now",
+  "created": "2025-10-07 07:14:38+00:00",
+  "text": "<p>I have a webapplication deployed, and it worked just fine while I it run on http. However now that the frontend is https, it will no longer connect to the backend, no matter what.</p>\n<p>If I leave the frontend API call on http, I will get an ERR_NETWORK error with <code>Mixed Content: The page at 'https://mywebapp.com/' was loaded over HTTPS, but requested an insecure XMLHttpRequest endpoint 'http://myserverip:myport/api/login'. This request has been blocked; the content must be served over HTTPS.</code></p>\n<p>If I switch the http to https in the API call on the frontend, instead I get an ERR_CONNECTION_CLOSED error.</p>\n<p>If I switch even the backend port mapping and proxy port to https in Dokku, then however I get an ERR_SSL_PROTOCOL_ERROR.</p>\n<p>So what am I supposed to do?</p>",
+  "id": "204d834c20d6f1f07a01527fdf0ef34435177503"
+}
