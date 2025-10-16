@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://blogs.oracle.com/database/rss",
+  "title": "Oracle Key Vault: Extending deeper into your environment.",
+  "url": "https://blogs.oracle.com/database/post/okv2112",
+  "created": "2025-10-10 22:43:00+00:00",
+  "text": "Since the initial release of OKV 21, we've added significant capabilities that expand its use cases and strengthen your security posture. This blog walks through these new features and what they mean for your organization.",
+  "id": "ae9d0f76fed5ce47d9b1e5ecad606a827b0c2a77",
+  "domain": "blogs.oracle.com"
+}
