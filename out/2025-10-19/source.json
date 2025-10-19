@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://blogs.oracle.com/database/rss",
+  "title": "Oracle Autonomous AI Lakehouse Embraces Apache Iceberg to Deliver Open, Multicloud Data Access",
+  "url": "https://blogs.oracle.com/datawarehousing/post/autonomous-ai-lakehouse-announcement",
+  "created": "2025-10-14 10:00:00+00:00",
+  "text": "Autonomous AI Lakehouse now delivers a data platform without compromises\u2014offering all the performance, reliability, and trust of the Oracle AI Database with the openness and interoperability of Apache Iceberg. Now available on OCI, AWS, Microsoft Azure, and Google Cloud, Autonomous AI Lakehouse empowers organizations to maximize the value of their data on an open, interoperable platform.",
+  "id": "cc64471f34a34c5f71c5ebd0239b5153d72bb8a8",
+  "domain": "blogs.oracle.com"
+}

@@ -1,5 +1,6 @@
 {
   "recent_ids": [
+    "cc64471f34a34c5f71c5ebd0239b5153d72bb8a8",
     "ae9d0f76fed5ce47d9b1e5ecad606a827b0c2a77",
     "0eefd8e69951668832c735a1e332dbc5b902154f",
     "204d834c20d6f1f07a01527fdf0ef34435177503",
@@ -28,9 +29,9 @@
   "recent_domains": [
     "blogs.oracle.com",
     "blogs.oracle.com",
-    "stackoverflow.com",
     "blogs.oracle.com",
-    "aws.amazon.com"
+    "stackoverflow.com",
+    "blogs.oracle.com"
   ],
   "max_ids": 60,
   "max_domains": 5
