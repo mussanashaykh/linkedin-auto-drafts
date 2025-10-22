@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Performance optimization strategies for MySQL on Amazon RDS",
+  "url": "https://aws.amazon.com/blogs/database/performance-optimization-strategies-for-mysql-on-amazon-rds/",
+  "created": "2025-10-16 18:52:02+00:00",
+  "text": "In this post, we share infrastructure-level optimizations, RDS-specific performance features, and database design patterns to help improve MySQL performance on Amazon RDS. We focus on practical configurations and monitoring techniques that complement existing parameter tuning documentation, helping you make informed decisions for your specific workload requirements.",
+  "id": "0318dadc34292dd19457adceb0346bd3c1e6a64b",
+  "domain": "aws.amazon.com"
+}
