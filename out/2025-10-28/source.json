@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Optimize and troubleshoot database performance in Amazon Aurora PostgreSQL by analyzing execution plans using CloudWatch Database Insights",
+  "url": "https://aws.amazon.com/blogs/database/optimize-and-troubleshoot-database-performance-in-amazon-aurora-postgresql-by-analyzing-execution-plans-using-cloudwatch-database-insights/",
+  "created": "2025-10-27 21:14:55+00:00",
+  "text": "In this post, we demonstrate how you can use Amazon CloudWatch Database Insights to analyze your SQL execution plan to troubleshoot and optimize your SQL query performance in an Aurora PostgreSQL cluster.",
+  "id": "fd28726a50b7ce064068058aef613ef5b4f47d87",
+  "domain": "aws.amazon.com"
+}
