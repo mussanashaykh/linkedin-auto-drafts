@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://blogs.oracle.com/cloud-infrastructure/rss",
+  "title": "Powering the Next Wave of AI with Oracle Acceleron and NVIDIA BlueField-4",
+  "url": "https://blogs.oracle.com/cloud-infrastructure/post/oracle-acceleron-and-nvidia-bluefield4-for-ai",
+  "created": "2025-10-29 13:00:00+00:00",
+  "text": "Oracle Cloud Infrastructure\u2019s new Zettascale10 platform combines Oracle Acceleron networking and NVIDIA BlueField-4 DPUs to deliver secure, high-performance AI infrastructure at massive scale. Supporting up to 800,000 GPUs, it enables efficient, secure, and cost-effective training and deployment of advanced AI models\u2014setting a new standard for AI cloud infrastructure through deep Oracle-NVIDIA collaboration.",
+  "id": "c9aae108b5431ad322a91605e0c51ba905b9fa18",
+  "domain": "blogs.oracle.com"
+}

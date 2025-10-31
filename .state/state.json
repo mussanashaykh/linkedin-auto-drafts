@@ -1,5 +1,6 @@
 {
   "recent_ids": [
+    "c9aae108b5431ad322a91605e0c51ba905b9fa18",
     "fd28726a50b7ce064068058aef613ef5b4f47d87",
     "522ac1199ff98fa2ae66d742e73b1e599a0075e8",
     "0318dadc34292dd19457adceb0346bd3c1e6a64b",
@@ -30,10 +31,10 @@
     "a02be70d2b4aa8e946e9a76e11fed06d35bbe197"
   ],
   "recent_domains": [
+    "blogs.oracle.com",
     "aws.amazon.com",
     "www.phoronix.com",
     "aws.amazon.com",
-    "blogs.oracle.com",
     "blogs.oracle.com"
   ],
   "max_ids": 60,
