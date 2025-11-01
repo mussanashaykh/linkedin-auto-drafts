@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://blogs.oracle.com/cloud-infrastructure/rss",
+  "title": "IAM Policies for Oracle Intelligent Data Lakes: Guardrails for Innovation",
+  "url": "https://blogs.oracle.com/cloud-infrastructure/post/iam-policies-for-oracle-intelligent-data-lakes",
+  "created": "2025-10-28 22:30:00+00:00",
+  "text": "Oracle Intelligent Data Lake, part of the Oracle Data Intelligence Platform, provides a unified and secure environment for managing all data types and with IAM policies, it ensures controlled, secure access for data storage, integration, and analysis.",
+  "id": "2b93775be4dc7ca255a4e9e52ca924e33f29a6b1",
+  "domain": "blogs.oracle.com"
+}
