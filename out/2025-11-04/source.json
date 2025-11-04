@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://blogs.oracle.com/cloud-infrastructure/rss",
+  "title": "Introducing Long-Running Functions and Response Destinations with OCI Functions",
+  "url": "https://blogs.oracle.com/cloud-infrastructure/post/longrunning-functions-and-response-destinations",
+  "created": "2025-10-31 15:34:00+00:00",
+  "text": "Two major enhancements are now GA for OCI Functions: Long-Running Functions and Response Destinations. Developers can now run functions for up to 60 minutes in detached mode and automatically route success or failure outcomes to OCI Streaming, Queue, or Notifications. These capabilities remove long-standing limits for serverless workloads, enabling richer automation, data processing, and event-driven workflows without polling or custom orchestration.",
+  "id": "417f8284b94fdb26b6527dffb8fd1b5391bfbf54",
+  "domain": "blogs.oracle.com"
+}

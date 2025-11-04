@@ -1,0 +1,9 @@
+Hard-earned lesson: Introducing Long-Running Functions and Response Destinations with OCI Functions. I’ve watched multiple teams wrestle with this, and it usually starts the same way: big goals, some quick wins, then creeping complexity. The early excitement fades when small misalignments—like unclear ownership or half-finished configs—turn into recurring headaches. Fixing introducing long running and long running functions early is rarely flashy, but it’s the difference between firefighting every week and sleeping well at night.
+
+My take: The wins come from getting the basics right and repeating them. The fastest way to improve outcomes is to make success measurable and boring to repeat. That means clear definitions of done, tested recovery steps, and visibility into the right signals—not just raw metrics. Treat functions response and response destinations as design inputs from day one, not problems to patch later. When the fundamentals are right, the advanced tuning actually sticks.
+
+• Define destinations oci and make someone accountable.
+• Automate oci functions and make someone accountable.
+• Baseline response destinations and make someone accountable.
+
+If you’ve solved this cleanly, I’d love to hear how.
