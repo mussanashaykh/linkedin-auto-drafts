@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://blogs.oracle.com/cloud-infrastructure/rss",
+  "title": "Supercharge OKE deployments with OpenKruise: safer updates, sidecar management and cluster-wide ops",
+  "url": "https://blogs.oracle.com/cloud-infrastructure/post/supercharge-oke-deployments-with-openkruise",
+  "created": "2025-11-04 17:30:00+00:00",
+  "text": "Learn how to enhance your Oracle Kubernetes Engine (OKE) deployments with OpenKruise \u2014 a powerful extension that adds production-grade capabilities like zero-downtime upgrades, sidecar lifecycle management, and cluster-wide job execution. This guide explains how OpenKruise integrates seamlessly with OKE using Terraform and Helm, helping you achieve safer updates, more efficient operations, and improved reliability for your workloads.",
+  "id": "2a48af59c5079376da923f55e60582543eed37d6",
+  "domain": "blogs.oracle.com"
+}
