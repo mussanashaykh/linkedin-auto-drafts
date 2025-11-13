@@ -1,0 +1,9 @@
+Hard-earned lesson: How Alight Solutions achieved 60% cost savings with Amazon ElastiCache for Valkey. I’ve watched multiple teams wrestle with this, and it usually starts the same way: big goals, some quick wins, then creeping complexity. The early excitement fades when small misalignments—like unclear ownership or half-finished configs—turn into recurring headaches. Fixing alight solutions and solutions achieved early is rarely flashy, but it’s the difference between firefighting every week and sleeping well at night.
+
+My take: The tool matters, but the design and runbooks matter more. The fastest way to improve outcomes is to make success measurable and boring to repeat. That means clear definitions of done, tested recovery steps, and visibility into the right signals—not just raw metrics. Treat achieved cost and cost savings as design inputs from day one, not problems to patch later. When the fundamentals are right, the advanced tuning actually sticks.
+
+• Define amazon elasticache and make someone accountable.
+• Automate savings amazon and make someone accountable.
+• Baseline cost savings and make someone accountable.
+
+What’s been your experience with this?

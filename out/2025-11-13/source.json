@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "How Alight Solutions achieved 60% cost savings with Amazon ElastiCache for Valkey",
+  "url": "https://aws.amazon.com/blogs/database/how-alight-solutions-achieved-60-cost-savings-with-amazon-elasticache-for-valkey/",
+  "created": "2025-11-10 21:57:09+00:00",
+  "text": "Alight Solutions is a leading cloud-based human capital technology and services provider that has focused its operations on integrated benefits administration, healthcare navigation, and employee experience solutions. In this post, we share how Alight Solutions transformed their caching infrastructure using ElastiCache while maintaining strict performance requirements, achieving over 60% cost reduction, 70-80% reduction in operational overhead, migration of gigabytes of data with sub-0.5 millisecond performance for millions of users, and a 99.99% reduction in incident rate.",
+  "id": "daa0cefdf0fae497ea2104273dd20be15162a8cf",
+  "domain": "aws.amazon.com"
+}
