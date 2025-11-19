@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://blogs.oracle.com/cloud-infrastructure/rss",
+  "title": "Introducing the New Fleet Application Management Release",
+  "url": "https://blogs.oracle.com/cloud-infrastructure/post/introducing-the-new-fleet-application-management-release",
+  "created": "2025-11-14 10:00:00+00:00",
+  "text": "We\u2019re excited to announce the latest release of Oracle Cloud Infrastructure (OCI) Fleet Application Management (FAM).\nThis release introduces PeopleSoft support, new dashboards and reports and Runbook Import/Export (Deep Cloning), continuing our mission to help customers simplify operations and improve security posture across large cloud environments.",
+  "id": "f6d7adf19a90752c819cb610830c0320f8812703",
+  "domain": "blogs.oracle.com"
+}
