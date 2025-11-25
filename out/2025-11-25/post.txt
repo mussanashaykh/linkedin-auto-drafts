@@ -1,0 +1,5 @@
+Hard-earned lesson: Move HTTP request with cert file from nodeJs to .NET not working. I’ve watched multiple teams wrestle with this, and it usually starts the same way: big goals, some quick wins, then creeping complexity. The early excitement fades when small misalignments—like unclear ownership or half-finished configs—turn into recurring headaches. Fixing move http and http request early is rarely flashy, but it’s the difference between firefighting every week and sleeping well at night.
+
+My take: Most pain isn’t exotic—it’s small gaps that add up under load. The fastest way to improve outcomes is to make success measurable and boring to repeat. That means clear definitions of done, tested recovery steps, and visibility into the right signals—not just raw metrics. Treat request cert and cert file as design inputs from day one, not problems to patch later. When the fundamentals are right, the advanced tuning actually sticks.
+
+If you’ve solved this cleanly, I’d love to hear how.
