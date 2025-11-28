@@ -1,0 +1,10 @@
+{
+  "source": "stackoverflow",
+  "feed": "https://stackoverflow.com/feeds/tag?tagnames=ssl&sort=newest",
+  "domain": "stackoverflow.com",
+  "title": "Hosting an app, locally, exposed to the outside world using a subdomain and virtual DIR.. where does the SSL cert live? [migrated]",
+  "url": "https://stackoverflow.com/questions/79827991/hosting-an-app-locally-exposed-to-the-outside-world-using-a-subdomain-and-virt",
+  "created": "2025-11-23 16:47:34+00:00",
+  "text": "<p>I'm hosting an app on a NAS, port 3000.\nWorks great.\nI have a Pi5 that runs Apache and a few web projects.\nWorks great.\nI've got a static IP from my ISP and can send traffic to via my domain name and subdomains. My router forwards ports 80 and 443 to the Pi that runs my Apache server.\nWorks great!\nI use certbot to make SSL for all subdomains.</p>\n<p>BUT now, I've got a domain set up in Apache that redirects to the app on the NAS.\nWorks great!\nBUT, I want to add SSL. certbot fails as I assume it's trying to add files to a folder, but of course, it can't. So, where do I add the SSL cert?</p>\n<ol>\n<li>The NAS?</li>\n<li>The Pi?</li>\n</ol>\n<p>I don't know how to make certs outside of certbot (I should learn)...\nIs there an idiot's guide to the relationship of SSL and redirected virtual directories?</p>",
+  "id": "2d0df5adf4629cb7bd7de97d9560767255a7e1f6"
+}
