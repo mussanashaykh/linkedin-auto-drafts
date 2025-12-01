@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Netflix consolidates relational database infrastructure on Amazon Aurora, achieving up to 75% improved performance",
+  "url": "https://aws.amazon.com/blogs/database/netflix-consolidates-relational-database-infrastructure-on-amazon-aurora-achieving-up-to-75-improved-performance/",
+  "created": "2025-11-27 00:29:50+00:00",
+  "text": "Netflix operates a global streaming service that serves hundreds of millions of users through a distributed microservices architecture. In this post, we examine the technical and operational challenges encountered by their Online Data Stores (ODS) team with their current self-managed distributed PostgreSQL-compatible database, the evaluation criteria used to select a database solution, and why they chose to migrate to Amazon Aurora PostgreSQL to meet their current and future performance needs. The migration to Aurora PostgreSQL improved their database infrastructure, achieving up to 75% increase in performance and 28% cost savings across critical applications.",
+  "id": "a902478902e957640e8cd775ac0b58aabcc6b4d4",
+  "domain": "aws.amazon.com"
+}
