@@ -1,0 +1,10 @@
+{
+  "source": "stackoverflow",
+  "feed": "https://stackoverflow.com/feeds/tag?tagnames=rds&sort=newest",
+  "domain": "stackoverflow.com",
+  "title": "How to increase undo tablespaces on aws rds mysql innodb_undo_tablespaces [migrated]",
+  "url": "https://stackoverflow.com/questions/79839096/how-to-increase-undo-tablespaces-on-aws-rds-mysql-innodb-undo-tablespaces",
+  "created": "2025-12-05 16:37:18+00:00",
+  "text": "<p>I have the issue that my undo history keeps growing and purging does not catch up.</p>\n<p>This number constantly increases:\nSELECT count FROM information_schema.innodb_metrics WHERE name = 'trx_rseg_history_len';</p>\n<p>I already made sure that transactions are not the issue and tried many different combinations of purge threads and purge batch size. Nothing helped.</p>\n<p>I now found out that the fact that I only have two innodb_undo_tablespaces could be the reason why more purge threads do not help.</p>\n<p>I would therefore like to increase the undo tablespace count. Unfortunately this seems to be a non-modifiable parameter in aws rds and I cannot change it on an existing instance and also not for a new database.</p>\n<p>Also creating them manually via:\n<code>CREATE UNDO TABLESPACE undo_003 ADD DATAFILE 'undo_003.ibu';</code> does not seem to be an option since even the admin account in rds does not have that permission.</p>\n<p>Is there any way to have more then 2 undo tablespaces with aws rds? I am actually using one of the largest available instances (r8g.24xlarge) so instance size should not be the reason for that restriction.</p>\n<p>If not: Any other idea why purge throughput does not increase when comparing 1 vs 4 vs 16 threads?</p>",
+  "id": "de53aa0f5939b383f91048a4ec1d6c8c9b1fa531"
+}
