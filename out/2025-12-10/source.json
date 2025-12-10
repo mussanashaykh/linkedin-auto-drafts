@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Exploring Optimize CPU feature on Amazon RDS for SQL Server",
+  "url": "https://aws.amazon.com/blogs/database/exploring-optimize-cpu-feature-on-amazon-rds-for-sql-server/",
+  "created": "2025-12-08 18:01:13+00:00",
+  "text": "Amazon RDS for SQL Server now supports the Optimize CPU feature. With the Optimize CPU feature you can define the number of vCPUs when you launch new instances or when modifying existing database instances. This feature also provides a detailed billing breakdown of RDS infrastructure costs, and licensing costs for SQL Server and Windows OS. It is available starting from the 7th Generation instance class. In this post, we explore how to use the Optimize CPU feature with Amazon RDS for SQL Server.",
+  "id": "19611b58ac4497a639861d864721068c84baef9f",
+  "domain": "aws.amazon.com"
+}
