@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Build and explore Knowledge Graphs faster with Amazon Neptune using Graph.Build and G.V() \u2013 Part 1",
+  "url": "https://aws.amazon.com/blogs/database/build-and-explore-knowledge-graphs-faster-with-amazon-neptune-using-graph-build-and-g-v-part-1/",
+  "created": "2025-12-12 19:32:50+00:00",
+  "text": "This is a guest blog post by Richard Loveday, Head of Product at Graph.Build, in partnership with Charles Ivie, Graph Architect at AWS. The Graph.Build platform is a dedicated, no-code graph model design studio and build factory, available on AWS Marketplace. Knowledge graphs have been widely adopted by organizations, powering use cases such as social [\u2026]",
+  "id": "e3d4d87ef938698d25ce99abbb681c006bcd61d4",
+  "domain": "aws.amazon.com"
+}
