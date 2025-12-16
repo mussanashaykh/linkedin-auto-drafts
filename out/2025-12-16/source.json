@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Inside Booking.com\u2019s ultra-low latency feature platform with Amazon ElastiCache",
+  "url": "https://aws.amazon.com/blogs/database/inside-booking-coms-ultra-low-latency-feature-platform-with-amazon-elasticache/",
+  "created": "2025-12-15 19:21:43+00:00",
+  "text": "As a global leader in the online travel industry, Booking.com continuously works to improve the travel experience for its users. Latency is a key factor in achieving this\u2014nobody likes waiting for their search results to be returned. In this post, we share how Booking.com designed a well-architected Amazon ElastiCache-based feature platform, achieving ultra-low latency and high throughput, to ensure the best possible user experience.",
+  "id": "50c8a792480c88851ae6b5d05fa47ba499d74ea2",
+  "domain": "aws.amazon.com"
+}
