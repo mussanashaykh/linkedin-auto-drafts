@@ -1,0 +1,9 @@
+From recent work: Improve Aurora PostgreSQL throughput by up to 165% and price-performance ratio by up to 120% using Optimized Reads on AWS Graviton4-based R8gd instances. I’ve watched multiple teams wrestle with this, and it usually starts the same way: big goals, some quick wins, then creeping complexity. The early excitement fades when small misalignments—like unclear ownership or half-finished configs—turn into recurring headaches. Fixing improve aurora and aurora postgresql early is rarely flashy, but it’s the difference between firefighting every week and sleeping well at night.
+
+My take: The wins come from getting the basics right and repeating them. The fastest way to improve outcomes is to make success measurable and boring to repeat. That means clear definitions of done, tested recovery steps, and visibility into the right signals—not just raw metrics. Treat postgresql throughput and throughput 165 as design inputs from day one, not problems to patch later. When the fundamentals are right, the advanced tuning actually sticks.
+
+• Define improve aurora and make someone accountable.
+• Automate postgresql throughput and make someone accountable.
+• Baseline price performance ratio and make someone accountable.
+
+If you’ve solved this cleanly, I’d love to hear how.
