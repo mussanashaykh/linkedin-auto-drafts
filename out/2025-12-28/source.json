@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Amazon ElastiCache re:Invent 2025 recap",
+  "url": "https://aws.amazon.com/blogs/database/amazon-elasticache-reinvent-2025-recap/",
+  "created": "2025-12-22 23:13:55+00:00",
+  "text": "re:Invent is a great opportunity for customers and builders who use AWS to share what they have built and why, architectural patterns, and best practices in the form of breakout sessions and workshops. In case you missed some of these sessions, or you wanted to get caught up on why customers like Expedia, Scopely, Adobe, and Amazon.com are building on ElastiCache, you can read this helpful summary of some of the ElastiCache highlights from re:Invent 2025.",
+  "id": "2698ff35c39dd18027ef0db355c4d1f054b082bf",
+  "domain": "aws.amazon.com"
+}
