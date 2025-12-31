@@ -1,0 +1,10 @@
+{
+  "source": "stackoverflow",
+  "feed": "https://stackoverflow.com/feeds/tag?tagnames=performance&sort=newest",
+  "domain": "stackoverflow.com",
+  "title": "Stack performance in Flutter?",
+  "url": "https://stackoverflow.com/questions/79855774/stack-performance-in-flutter",
+  "created": "2025-12-27 15:50:22+00:00",
+  "text": "<p>In my android application, there is a 4X4 board for 2 player and 4 play buttons together. One board square is made of one stack each. And there is 5-7 layers to several widgets on one stack depending of accessibility. When one player has pressed a button, the game board will drawn again.</p>\n<p>Performance was a issue until I saw this video about Flutter (graphic) performance: <a href=\"https://youtu.be/Iaqb8YdIrO0?si=kCSLEzDvjMUsOxJ-\" rel=\"nofollow noreferrer\">No More Jank: How to Keep Your Flutter App Smooth and Snappy</a>. Also about <code>RepaintBoundary(child: Stack(...),)</code>, which helped a lot in code place where actual board was <code>build()</code>.</p>\n<p>I was thinking, that I had missed even so something, until I founded put all together into this:</p>\n<pre><code>class StackWidget extends StatelessWidget {\n   StackWidget({super.key, required this.child});\n   final Stack child;\n\n   @override\n   Widget build(BuildContext context)\n   {\n     return RepaintBoundary(child: child);\n   }\n}\n</code></pre>",
+  "id": "4b921ee495b4ee1503e6e621ce805215b4674d71"
+}
