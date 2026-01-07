@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Configure Optimize CPU on Amazon RDS for SQL Server",
+  "url": "https://aws.amazon.com/blogs/database/configure-optimize-cpu-on-amazon-rds-for-sql-server/",
+  "created": "2026-01-07 01:52:41+00:00",
+  "text": "Amazon Relational Database Service (Amazon RDS) for SQL Server now offers the Optimize CPU feature, which enabled control over vCPU allocation through core count modification setting. SQL Server licensing costs can consume a significant portion of your database budget, especially when you\u2019re paying for vCPUs that aren\u2019t fully utilized. This post demonstrates how to implement the Optimize CPU feature to potentially reduce licensing costs while maintaining performance for both new and existing Amazon RDS instances, along with performance benchmarking results and cost implications.",
+  "id": "fa39037e7eab78bb8e505f542ec916008fcfa9e7",
+  "domain": "aws.amazon.com"
+}
