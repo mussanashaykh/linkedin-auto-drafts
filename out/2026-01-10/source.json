@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Unlock Amazon Aurora\u2019s Advanced Features with Standard JDBC Driver using AWS Advanced JDBC Wrapper",
+  "url": "https://aws.amazon.com/blogs/database/unlock-amazon-auroras-advanced-features-with-standard-jdbc-driver-using-aws-advanced-jdbc-wrapper/",
+  "created": "2026-01-08 22:48:04+00:00",
+  "text": "In this post, we show how you can enhance your Java application with the cloud-based capabilities of Amazon Aurora by using the JDBC Wrapper. Simple code changes shared in this post can transform a standard JDBC application to use fast failover, read/write splitting, IAM authentication, AWS Secrets Manager integration, and federated authentication.",
+  "id": "58c16b12a931e5495b1ac95a9d3b9323359187f6",
+  "domain": "aws.amazon.com"
+}
