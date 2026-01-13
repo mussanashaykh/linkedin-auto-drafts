@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Implement multi-Region endpoint routing for Amazon Aurora DSQL",
+  "url": "https://aws.amazon.com/blogs/database/implement-multi-region-endpoint-routing-for-amazon-aurora-dsql/",
+  "created": "2026-01-06 22:39:30+00:00",
+  "text": "Applications using Aurora DSQL multi-Region clusters should implement a DNS-based routing solution (such as Amazon Route 53) to automatically redirect traffic between AWS Regions. In this post, we show you automated solution for redirecting database traffic to alternate regional endpoints without requiring manual configuration changes, particularly in mixed data store environments.",
+  "id": "3a52c54052f4470662464a8e2b50f20d067fbb80",
+  "domain": "aws.amazon.com"
+}
