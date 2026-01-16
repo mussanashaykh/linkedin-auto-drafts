@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Best practices for creating and reorganizing data with additional storage volumes in Amazon RDS for Oracle",
+  "url": "https://aws.amazon.com/blogs/database/best-practices-for-creating-and-reorganizing-data-with-additional-storage-volumes-in-amazon-rds-for-oracle/",
+  "created": "2026-01-13 17:59:09+00:00",
+  "text": "In this post, we show you how to use additional storage volumes to expand your RDS for Oracle storage capacity beyond 64 TiB. In addition, we walk through use cases for additional storage volume and best practices while working with additional volumes.",
+  "id": "21e552314a053821ce2c5e03b69d3fd70ab00b7d",
+  "domain": "aws.amazon.com"
+}
