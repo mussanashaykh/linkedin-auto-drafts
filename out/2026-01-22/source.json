@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Control database name visibility in Amazon RDS for SQL Server instances",
+  "url": "https://aws.amazon.com/blogs/database/control-database-name-visibility-in-amazon-rds-for-sql-server-instances/",
+  "created": "2026-01-20 20:22:38+00:00",
+  "text": "In Amazon Relational Database Service (Amazon RDS) for SQL Server, database visibility is configured using a dedicated stored procedure. In this post, we demonstrate tenant isolation at the visibility level, preventing tenants from seeing database names belonging to other customers while maintaining their access to their own resources. This solution addresses an important architectural consideration in multi-tenant SQL Server environments where database names might reveal tenant information. By using the Amazon RDS for SQL Server custom stored procedure msdb.dbo.rds_manage_view_db_permission, users can effectively control database visibility on a per-login basis while maintaining full application functionality.",
+  "id": "19c98b7454754b568fd8458d8ded4eb31ce33e5c",
+  "domain": "aws.amazon.com"
+}
