@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "MaiCoin case study: Blue/green upgrade from Amazon ElastiCache Redis to Valkey",
+  "url": "https://aws.amazon.com/blogs/database/maicoin-case-study-blue-green-upgrade-from-amazon-elasticache-redis-to-valkey/",
+  "created": "2026-01-22 17:15:32+00:00",
+  "text": "MaiCoin is a leading cryptocurrency exchange and brokerage platform in Taiwan. The MaiCoin platform previously ran on a set of Amazon ElastiCache deployment clusters on Redis OSS. This post explores MaiCoin\u2019s practical approaches using RedisShake for migrating from Amazon ElastiCache for Redis OSS to Amazon ElastiCache for Valkey using blue/green deployment strategies.",
+  "id": "823e171367ccd53548f6761358f7af96730e345a",
+  "domain": "aws.amazon.com"
+}
