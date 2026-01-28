@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Analyze JSON data efficiently with Amazon Redshift SUPER",
+  "url": "https://aws.amazon.com/blogs/database/analyze-json-data-efficiently-with-amazon-redshift-super/",
+  "created": "2026-01-27 17:38:41+00:00",
+  "text": "Amazon Redshift transforms how organizations analyze JSON data by combining the analytical power of a columnar data warehouse with robust JSON processing capabilities. By using Amazon Redshift SUPER datatype, you can efficiently store, query, and analyze complex hierarchical data alongside traditional structured data without sacrificing performance. This post focuses on JSON features of Amazon Redshift.",
+  "id": "6e3ef09b7fae70147626cae3dd922bb2d5e35f87",
+  "domain": "aws.amazon.com"
+}
