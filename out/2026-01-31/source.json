@@ -1,0 +1,10 @@
+{
+  "source": "stackoverflow",
+  "feed": "https://stackoverflow.com/feeds/tag?tagnames=rds&sort=newest",
+  "domain": "stackoverflow.com",
+  "title": "AWS RDS PostgreSQL storage almost full but tables show very small size [closed]",
+  "url": "https://stackoverflow.com/questions/79878754/aws-rds-postgresql-storage-almost-full-but-tables-show-very-small-size",
+  "created": "2026-01-29 14:29:17+00:00",
+  "text": "<p>I\u2019m using <strong>AWS RDS PostgreSQL</strong> and repeatedly seeing this event:</p>\n<blockquote>\n<p><em>\u201cStorage size 20 GiB is approaching the maximum storage threshold 22 GiB.\u201d</em></p>\n</blockquote>\n<p>However, when I inspect the database using <strong>DataGrip &amp; AWS RDS Log</strong>, all user tables appear to be only <strong>KB in size</strong>, and I don\u2019t see any large tables.</p>\n<p><a href=\"https://i.sstatic.net/JpyxbAm2.png\" rel=\"nofollow noreferrer\">Aws RDS Log</a>, <a href=\"https://i.sstatic.net/DWG2Ux4E.png\" rel=\"nofollow noreferrer\">Actual DB Size</a></p>\n<p><strong>My questions:</strong></p>\n<ol>\n<li><p>What contributes to AWS RDS storage usage besides visible table data?</p>\n</li>\n<li><p>How can this issue be resolved <strong>without deleting tables or actual data</strong>?</p>\n</li>\n<li><p>What are best practices to <strong>prevent this from happening again in the future</strong>?</p>\n</li>\n</ol>",
+  "id": "3b2ddbaf7d1d88f4f3c0475bd35ea6429f827f44"
+}
