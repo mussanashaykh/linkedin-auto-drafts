@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Enhance the visibility of Amazon RDS instances and configuration with AWS Config and Amazon Quick Suite",
+  "url": "https://aws.amazon.com/blogs/database/enhance-the-visibility-of-amazon-rds-instances-and-configuration-with-aws-config-and-amazon-quick-suite/",
+  "created": "2026-01-27 17:41:24+00:00",
+  "text": "In this post, we show you how to build a centralized dashboard for monitoring Amazon RDS configurations across your organization by using AWS Config and Amazon Quick Suite. This solution delivers detailed insights across different areas, such as summary metrics, backup configurations, security posture, engine and support information, extended configurations, and resource tagging.",
+  "id": "5cb4375c3ae54906ade9b5edf618656d1e18178f",
+  "domain": "aws.amazon.com"
+}
