@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Introducing pre-warming for Amazon Keyspaces tables",
+  "url": "https://aws.amazon.com/blogs/database/introducing-pre-warming-for-amazon-keyspaces-tables/",
+  "created": "2026-01-29 19:32:17+00:00",
+  "text": "Amazon Keyspaces now supports the pre-warming feature to provide you with proactive throughput management. With pre-warming, you can set minimum warm throughput values that your table can handle instantly, avoiding the cold start delays that occur during dynamic partition splits. In this post, we discuss the Amazon Keyspaces pre-warming feature capabilities and demonstrate how it can enhance your throughput performance.",
+  "id": "b5f0730e0be19c643bd1e9a7bc01bd91d8c9dab0",
+  "domain": "aws.amazon.com"
+}
