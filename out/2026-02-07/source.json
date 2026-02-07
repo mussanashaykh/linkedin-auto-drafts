@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Build fraud detection systems using AWS Entity Resolution and Amazon Neptune Analytics",
+  "url": "https://aws.amazon.com/blogs/database/build-fraud-detection-systems-using-aws-entity-resolution-and-amazon-neptune-analytics/",
+  "created": "2026-02-05 19:46:27+00:00",
+  "text": "In this post, we show how you can use graph algorithms to analyze the results of AWS Entity Resolution and related transactions for the CNP use case. We use several AWS services, including Neptune Analytics, AWS Entity Resolution, Amazon SageMaker notebooks, and Amazon S3.",
+  "id": "29ec773678444ff1ff2d81e65ec1ff48076b3772",
+  "domain": "aws.amazon.com"
+}

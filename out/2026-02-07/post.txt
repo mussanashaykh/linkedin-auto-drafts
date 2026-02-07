@@ -1,0 +1,9 @@
+If you’re in the middle of this: Build fraud detection systems using AWS Entity Resolution and Amazon Neptune Analytics. I’ve watched multiple teams wrestle with this, and it usually starts the same way: big goals, some quick wins, then creeping complexity. The early excitement fades when small misalignments—like unclear ownership or half-finished configs—turn into recurring headaches. Fixing build fraud and fraud detection early is rarely flashy, but it’s the difference between firefighting every week and sleeping well at night.
+
+My take: You don’t need heroics; you need clarity, guardrails, and practice. The fastest way to improve outcomes is to make success measurable and boring to repeat. That means clear definitions of done, tested recovery steps, and visibility into the right signals—not just raw metrics. Treat detection systems and systems using as design inputs from day one, not problems to patch later. When the fundamentals are right, the advanced tuning actually sticks.
+
+• Define using aws and make someone accountable.
+• Automate fraud detection and make someone accountable.
+• Baseline systems using and make someone accountable.
+
+If you’ve solved this cleanly, I’d love to hear how.
