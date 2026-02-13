@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Migrate relational-style data from NoSQL to Amazon Aurora DSQL",
+  "url": "https://aws.amazon.com/blogs/database/migrate-relational-style-data-from-nosql-to-amazon-aurora-dsql/",
+  "created": "2026-02-11 21:55:10+00:00",
+  "text": "In this post, we demonstrate how to efficiently migrate relational-style data from NoSQL to Aurora DSQL, using Kiro CLI as our generative AI tool to optimize schema design and streamline the migration process.",
+  "id": "34c4b726e4edb46db21298164d90e0713a6887d9",
+  "domain": "aws.amazon.com"
+}
