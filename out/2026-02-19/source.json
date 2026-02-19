@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Use default encryption at rest for new Amazon Aurora clusters",
+  "url": "https://aws.amazon.com/blogs/database/use-default-encryption-at-rest-for-new-amazon-aurora-clusters/",
+  "created": "2026-02-17 19:28:42+00:00",
+  "text": "In this post, you learn how Amazon Aurora now provides encryption at rest by default for all new database clusters using AWS owned keys. You\u2019ll see how to verify encryption status using the new StorageEncryptionType field, understand the impact on new and existing clusters, and explore migration options for unencrypted databases.",
+  "id": "ece3d938eef1d7876b8e6a7701ea888efff31157",
+  "domain": "aws.amazon.com"
+}
