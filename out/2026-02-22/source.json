@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Accelerate your database migration journey with AI-powered AWS DMS",
+  "url": "https://aws.amazon.com/blogs/database/accelerate-your-database-migration-journey-with-ai-powered-aws-dms/",
+  "created": "2026-02-16 18:08:33+00:00",
+  "text": "When running database migration with AWS DMS, you may encounter opportunities to streamline your workflow: interpreting error messages, understanding configuration parameter relationships, and navigating between the console, documentation, and community forums during troubleshooting. What if you could have an AI-powered assistant that understands your migration context, diagnoses issues in real-time, and provides actionable guidance\u2014all within your workflow? In this post, we show you have Amazon Q integration with AWS DMS can transform your database migration experience.",
+  "id": "98c295343b25b494d7bca5bbcb68b83b62c36666",
+  "domain": "aws.amazon.com"
+}
