@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Resilience testing on Amazon ElastiCache with AWS Fault Injection Service",
+  "url": "https://aws.amazon.com/blogs/database/resilience-testing-on-amazon-elasticache-with-aws-fault-injection-service/",
+  "created": "2026-02-23 18:10:58+00:00",
+  "text": "In this post, we guide you on how to run resilience tests on Amazon ElastiCache using AWS Fault Injection Service and how you can use it to strengthen the resilience strategy of your application.",
+  "id": "62d7ca4905c2d251f42c81ed0d2424a4291a02b6",
+  "domain": "aws.amazon.com"
+}
