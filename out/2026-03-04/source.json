@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Replicate spatial data using AWS DMS and Amazon RDS for PostgreSQL",
+  "url": "https://aws.amazon.com/blogs/database/replicate-spatial-data-using-aws-dms-and-amazon-rds-for-postgresql/",
+  "created": "2026-02-26 16:35:13+00:00",
+  "text": "In this post, we show you how to migrate spatial (geospatial) data from self-managed PostgreSQL, Amazon RDS for PostgreSQL, or Amazon Aurora PostgreSQL-Compatible Edition to Amazon RDS for PostgreSQL or Amazon Aurora PostgreSQL using AWS DMS. Spatial data is useful for applications such as mapping, routing, asset tracking, and geographic visualization. We walk through setting up your environment, configuring AWS DMS, and validating the successful migration of spatial datasets.",
+  "id": "cb8d3ad4bb124037a5d0fabde2e945a75e73e9ec",
+  "domain": "aws.amazon.com"
+}
