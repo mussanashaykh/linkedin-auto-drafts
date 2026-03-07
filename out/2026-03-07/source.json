@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Automating\u00a0Amazon RDS backup and maintenance windows for Daylight Saving Time shifts",
+  "url": "https://aws.amazon.com/blogs/database/automating-amazon-rds-backup-and-maintenance-windows-for-daylight-saving-time-shifts/",
+  "created": "2026-03-06 19:49:42+00:00",
+  "text": "In this post, you\u2019ll learn how to deploy a serverless solution using AWS CloudFormation that automatically adjusts RDS maintenance and backup windows for DST transitions.",
+  "id": "3021feb40b7b13aae0260000630909ec8631bfd0",
+  "domain": "aws.amazon.com"
+}
