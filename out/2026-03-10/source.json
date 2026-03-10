@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "From bottlenecks to breakthroughs: Dutchie\u2019s database migration journey",
+  "url": "https://aws.amazon.com/blogs/database/from-bottlenecks-to-breakthroughs-dutchies-database-migration-journey/",
+  "created": "2026-03-09 16:52:34+00:00",
+  "text": "Dutchie, a leading technology platform serving the cannabis industry, manages critical operations for thousands of dispensaries across multiple states, processing millions of transactions annually. In this post, we explore how Dutchie successfully navigated the challenges of migrating mission-critical workloads to Amazon RDS for SQL Server in preparation for 4/20 week in 2025.",
+  "id": "e1559b78d79c5d43f1ed674c29947f0b057da72c",
+  "domain": "aws.amazon.com"
+}
