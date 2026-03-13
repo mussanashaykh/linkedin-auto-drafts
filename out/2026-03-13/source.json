@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Migrate Cloud SQL for MySQL to Amazon Aurora and Amazon RDS for MySQL Using AWS DMS",
+  "url": "https://aws.amazon.com/blogs/database/migrate-cloud-sql-for-mysql-to-amazon-aurora-and-amazon-rds-for-mysql-using-aws-dms/",
+  "created": "2026-03-11 16:51:20+00:00",
+  "text": "In this post, we demonstrate how to migrate from Cloud SQL for MySQL 8+ to Amazon RDS for MySQL 8+ or Amazon Aurora MySQL\u2013Compatible using AWS DMS over an AWS Site-to-Site VPN. We cover preparing the source and target environments, exemplifying cross-cloud connectivity, and setting up DMS tasks.",
+  "id": "90327e1147c69d4853880173e83194ce16d4262f",
+  "domain": "aws.amazon.com"
+}
