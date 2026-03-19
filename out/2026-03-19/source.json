@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Automated parameter and option group change monitoring in Amazon RDS and Amazon Aurora",
+  "url": "https://aws.amazon.com/blogs/database/automated-parameter-and-option-group-change-monitoring-in-amazon-rds-and-amazon-aurora/",
+  "created": "2026-03-18 18:11:40+00:00",
+  "text": "In this post, you will learn how to build a serverless monitoring solution sending detailed alerts whenever Amazon RDS parameter groups are modified, including which databases are affected and whether a restart is required.",
+  "id": "e170bec1c6084f88ef8ff6a647cb7f95079c6685",
+  "domain": "aws.amazon.com"
+}
