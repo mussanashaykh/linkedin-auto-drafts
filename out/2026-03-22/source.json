@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Export Amazon SimpleDB domain data to Amazon S3",
+  "url": "https://aws.amazon.com/blogs/database/export-amazon-simpledb-domain-data-to-amazon-s3/",
+  "created": "2026-03-16 18:05:26+00:00",
+  "text": "As AWS continues to evolve its services to better align with customer needs and modern workloads, we\u2019re excited to introduce a new export functionality for Amazon SimpleDB . By using this feature, you can export domain data to Amazon S3 in JSON format, unlocking new opportunities for long-term storage, and migration to purpose-built databases. The export generates a complete JSON representation of Amazon SimpleDB data. In this post, we walk you through how to use the new export functionality, highlight best practices, and share monitoring functionality to help you make the most of it.",
+  "id": "df2fc3735628d27762da49e81fe4e54e1d3106bd",
+  "domain": "aws.amazon.com"
+}
