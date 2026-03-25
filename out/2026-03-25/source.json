@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Synchronizing a Backup on-premises Db2 Server with Amazon RDS for Db2",
+  "url": "https://aws.amazon.com/blogs/database/synchronizing-a-backup-on-premises-db2-server-with-amazon-rds-for-db2/",
+  "created": "2026-03-19 21:12:19+00:00",
+  "text": "In this post, we provide guidance on implementing a hybrid architecture where a self-managed Db2 instance remains synchronized with Amazon RDS for Db2 via continuous archive log application, ensuring organizations maintain strategic deployment options without compromising the advantages of cloud-native managed services.",
+  "id": "93e909408b9b938336c39b8788a5fb07f7d8a214",
+  "domain": "aws.amazon.com"
+}
