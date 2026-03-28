@@ -1,0 +1,10 @@
+{
+  "source": "hackernews",
+  "feed": "https://hnrss.org/newest?q=database+performance",
+  "domain": "howtocenterdiv.com",
+  "title": "Database Performance Bottlenecks: N+1 Queries, Missing Indexes, Connection Pools",
+  "url": "https://howtocenterdiv.com/beyond-the-div/your-database-is-the-bottleneck-not-your-code",
+  "created": "2026-03-27 02:54:14+00:00",
+  "text": "<p>Article URL: <a href=\"https://howtocenterdiv.com/beyond-the-div/your-database-is-the-bottleneck-not-your-code\">https://howtocenterdiv.com/beyond-the-div/your-database-is-the-bottleneck-not-your-code</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=47538622\">https://news.ycombinator.com/item?id=47538622</a></p>\n<p>Points: 3</p>\n<p># Comments: 0</p>",
+  "id": "935fada6119d78cc6d6ffc08e4131b7042c5c81c"
+}
