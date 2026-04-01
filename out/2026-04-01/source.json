@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Augment DMS SC with Amazon Q Developer for code conversion and test case generation",
+  "url": "https://aws.amazon.com/blogs/database/augment-dms-sc-with-amazon-q-developer-for-code-conversion-and-test-case-generation/",
+  "created": "2026-03-31 21:05:36+00:00",
+  "text": "You can use the AWS Database Migration Service Schema Conversion (AWS DMS SC) with generative AI feature to accelerate your database migration to AWS. This feature automatically handles the conversion of many database objects during migration by using traditional rule-based techniques and deterministic AI techniques. In this post, we demonstrate how Amazon Q Developer delivers generic solutions for complex AWS DMS SC issues, intelligently converts database stored procedure code from source to target database-compatible code, and automatically generates comprehensive test cases to validate your migrated database objects.",
+  "id": "53f5497f8c6f7eaa8d75bc4ea3926878132a1deb",
+  "domain": "aws.amazon.com"
+}
