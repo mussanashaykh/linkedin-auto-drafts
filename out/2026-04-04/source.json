@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Migrating to Amazon ElastiCache for Valkey: Best practices and a customer success story",
+  "url": "https://aws.amazon.com/blogs/database/migrating-to-amazon-elasticache-for-valkey-best-practices-and-a-customer-success-story/",
+  "created": "2026-04-01 20:50:38+00:00",
+  "text": "In this post, we provide a guide to migrating from Redis OSS to ElastiCache for Valkey, incorporating different migration strategies and AWS best practices. Additionally, we highlight a customer\u2019s successful migration to Valkey, which maintained their robust performance standards while achieving a 20% reduction in ElastiCache cluster costs.",
+  "id": "1087f2411761d0b4b60d00ea3f4133aa82ca6807",
+  "domain": "aws.amazon.com"
+}
