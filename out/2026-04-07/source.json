@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Optimize full-text search in Amazon RDS for MySQL and Amazon Aurora MySQL",
+  "url": "https://aws.amazon.com/blogs/database/optimize-full-text-search-in-amazon-rds-for-mysql-and-amazon-aurora-mysql/",
+  "created": "2026-04-06 18:11:09+00:00",
+  "text": "In this post, we show you how to optimize full-text search (FTS) performance in Amazon RDS for MySQL and Amazon Aurora MySQL-Compatible Edition through proper maintenance and monitoring. We discuss why FTS indexes require regular maintenance, common issues that can arise, and best practices for keeping your FTS-enabled databases running smoothly.",
+  "id": "7fe67d164c2ef9cda21dc2d8553672623f7dfe52",
+  "domain": "aws.amazon.com"
+}
