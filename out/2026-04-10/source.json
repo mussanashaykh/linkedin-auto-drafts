@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Monitor custom database metrics in Amazon RDS for SQL Server using Amazon CloudWatch",
+  "url": "https://aws.amazon.com/blogs/database/monitor-custom-database-metrics-in-amazon-rds-for-sql-server-using-amazon-cloudwatch/",
+  "created": "2026-04-07 18:29:06+00:00",
+  "text": "In this post, we demonstrate how to create custom Amazon RDS for SQL Server CloudWatch metrics. You accomplish this by using SQL Server Agent jobs and CloudWatch Logs integration. We walk through an example of monitoring table size within a SQL Server database however, this approach works for various other metrics. You can adapt this approach to track row counts, database size, job counts, user sessions, or other metrics.",
+  "id": "263b04c4a76819d98f4f5a58b5f8406ec3aec9ef",
+  "domain": "aws.amazon.com"
+}
