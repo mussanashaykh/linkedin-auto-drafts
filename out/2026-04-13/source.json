@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Navigating backup and recovery options for Oracle Database@AWS",
+  "url": "https://aws.amazon.com/blogs/database/navigating-backup-and-recovery-options-for-oracle-databaseaws/",
+  "created": "2026-04-06 18:12:17+00:00",
+  "text": "Oracle Database@AWS (ODB@AWS) delivers Oracle Exadata infrastructure, managed by Oracle Cloud Infrastructure (OCI), directly within Amazon Web Services (AWS) data centers. In this post, we walk you through the backup and recovery options available for ODB@AWS services: Oracle Exadata Database Service on Dedicated Infrastructure (ExaDB-D) and Oracle Autonomous AI Database on Dedicated Exadata Infrastructure (ADB-D).",
+  "id": "571c507466619e65b5355e7d56483ada6b7682ee",
+  "domain": "aws.amazon.com"
+}
