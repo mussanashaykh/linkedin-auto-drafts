@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Improving storage with additional storage volumes in Amazon RDS for SQL Server",
+  "url": "https://aws.amazon.com/blogs/database/improving-storage-with-additional-storage-volumes-in-amazon-rds-for-sql-server/",
+  "created": "2026-04-14 16:16:39+00:00",
+  "text": "As SQL Server workloads grow on Amazon Relational Database Service (Amazon RDS) for Db2, the 64 TiB storage limit can force architectural issues that constrain business growth and create performance bottlenecks when transaction logs compete with data for I/O resources. The additional storage volumes feature in Amazon RDS for SQL Server solves these challenges. You can use Amazon RDS for SQL Server to attach additional storage volumes beyond the root volume, with each volume having different storage classes and performance characteristics. In this post, you will learn how to use the additional storage volumes feature in Amazon RDS for SQL Server to address these common challenges.",
+  "id": "8b743deb68a1a1dd67a3ec9d44cf704ec7f79955",
+  "domain": "aws.amazon.com"
+}
