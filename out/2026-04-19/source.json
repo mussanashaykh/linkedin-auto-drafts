@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Connecting .NET Lambda to Amazon Aurora PostgreSQL via RDS Proxy",
+  "url": "https://aws.amazon.com/blogs/database/connecting-net-lambda-to-amazon-aurora-postgresql-via-rds-proxy/",
+  "created": "2026-04-13 15:48:58+00:00",
+  "text": "In this post, I show you how to connect Lambda functions to Aurora PostgreSQL using Amazon RDS Proxy. We cover how to configure AWS Secrets Manager, set up RDS Proxy, and create a C# Lambda function with secure credential caching. I provide a GitHub repository which contains a YAML-format AWS CloudFormation template to provision the key components demonstrated, a C# sample function. I also walk through the Lambda function deployment step by step.",
+  "id": "137053d032492438701d1cc4d688ba8497d5c3d6",
+  "domain": "aws.amazon.com"
+}
