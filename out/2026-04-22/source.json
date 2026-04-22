@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Getting started with the Oracle Database@AWS high performance networking",
+  "url": "https://aws.amazon.com/blogs/database/getting-started-with-the-oracle-databaseaws-high-performance-networking/",
+  "created": "2026-04-20 20:00:10+00:00",
+  "text": "In this post, we explore Oracle Database@AWS high performance networking capabilities and provide a step-by-step guide to help you configure and deploy this feature.",
+  "id": "d5abce6f97c237841c4c176b2dc07de75edd57d2",
+  "domain": "aws.amazon.com"
+}
