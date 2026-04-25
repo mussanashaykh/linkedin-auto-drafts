@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Best practices and architecture patterns for cross-account sharing in Oracle Database@AWS",
+  "url": "https://aws.amazon.com/blogs/database/best-practices-and-architecture-patterns-for-cross-account-sharing-in-oracle-databaseaws/",
+  "created": "2026-04-23 19:51:13+00:00",
+  "text": "In this post, we walk through the available options for sharing Oracle Database@AWS (ODB@AWS) resources across AWS accounts. We also cover common cross-account architecture patterns, along with best practices and key considerations. This helps you design your ODB@AWS architecture across your AWS accounts efficiently.",
+  "id": "ed873f22cff47373641dd69de6664a6f1f41fa3c",
+  "domain": "aws.amazon.com"
+}
