@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Building agentic AI for Amazon RDS for SQL Server with Strands and AgentCore",
+  "url": "https://aws.amazon.com/blogs/database/building-agentic-ai-for-amazon-rds-for-sql-server-with-strands-and-agentcore/",
+  "created": "2026-04-29 15:27:07+00:00",
+  "text": "In this post, we walk through building an agent that investigates blocking and deadlocks on Amazon RDS for SQL Server \u2014 two issues that directly impact application performance, cause transaction failures, and lead to user-facing timeouts. Using the Strands Agents framework, we convert the T-SQL queries DBAs already use for these investigations into agent tools, combine them into a single agent, and deploy it to AgentCore Runtime.",
+  "id": "e4e5b8e41fcbdcc2917958578ec4e9748c5eebde",
+  "domain": "aws.amazon.com"
+}
