@@ -1,5 +1,6 @@
 {
   "recent_ids": [
+    "3307d96b85bf12a265bff1ca309993cb75958006",
     "e4e5b8e41fcbdcc2917958578ec4e9748c5eebde",
     "b9afc3a78d44df8f930ab3d047cadacc3487cb62",
     "ac426bcdc6047bc2734e7f338d1be6c17943e99c",
@@ -58,14 +59,13 @@
     "85140d410e4a378ce54d638beec3e949a1d80953",
     "f6d7adf19a90752c819cb610830c0320f8812703",
     "67bf1ae8f5ef67f433a2f6370c6073c665734f2e",
-    "daa0cefdf0fae497ea2104273dd20be15162a8cf",
-    "2a48af59c5079376da923f55e60582543eed37d6"
+    "daa0cefdf0fae497ea2104273dd20be15162a8cf"
   ],
   "recent_domains": [
+    "blogs.oracle.com",
     "aws.amazon.com",
     "www.exasol.com",
     "stackoverflow.com",
-    "aws.amazon.com",
     "aws.amazon.com"
   ],
   "max_ids": 60,
