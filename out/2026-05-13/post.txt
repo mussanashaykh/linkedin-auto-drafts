@@ -1,0 +1,9 @@
+From recent work: Filter, transform, and load your DynamoDB table exports using AWS Glue. I’ve watched multiple teams wrestle with this, and it usually starts the same way: big goals, some quick wins, then creeping complexity. The early excitement fades when small misalignments—like unclear ownership or half-finished configs—turn into recurring headaches. Fixing filter transform and transform load early is rarely flashy, but it’s the difference between firefighting every week and sleeping well at night.
+
+My take: Simple, observable paths beat clever, fragile ones. The fastest way to improve outcomes is to make success measurable and boring to repeat. That means clear definitions of done, tested recovery steps, and visibility into the right signals—not just raw metrics. Treat load dynamodb and dynamodb table as design inputs from day one, not problems to patch later. When the fundamentals are right, the advanced tuning actually sticks.
+
+• Define table exports and make someone accountable.
+• Automate dynamodb table and make someone accountable.
+• Baseline load dynamodb and make someone accountable.
+
+Disagree with my take? Tell me why.
