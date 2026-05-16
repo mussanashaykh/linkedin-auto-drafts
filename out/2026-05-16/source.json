@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Upgrade strategies for Amazon RDS for MySQL 8.0 to 8.4",
+  "url": "https://aws.amazon.com/blogs/database/upgrade-strategies-for-amazon-rds-for-mysql-8-0-to-8-4/",
+  "created": "2026-05-14 15:57:59+00:00",
+  "text": "This post is part of a two-part series on upgrading RDS for MySQL 8.0 to 8.4. Here, we cover the end of standard support timeline, extended support costs, upgrade methods, and key best practices. For a step-by-step implementation guide, see Best practices for upgrading RDS for MySQL 8.0 to 8.4 with prechecks, Blue/Green, and rollback.",
+  "id": "bdbf923939998aedd060061713f80f696a79ad30",
+  "domain": "aws.amazon.com"
+}
