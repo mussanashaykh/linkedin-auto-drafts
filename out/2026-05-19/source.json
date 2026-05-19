@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Zero-downtime DynamoDB construct migration: from Table to TableV2 with cdk orphan",
+  "url": "https://aws.amazon.com/blogs/database/zero-downtime-dynamodb-construct-migration-from-table-to-tablev2-with-cdk-orphan/",
+  "created": "2026-05-13 17:44:02+00:00",
+  "text": "In this post, we show you how to use the new cdk orphan command to safely migrate a DynamoDB table from the Table construct to TableV2 with zero downtime. Your data stays intact, streams keep flowing, and your application remains available throughout the process.",
+  "id": "74ea5850b872404910c87bc1a15380ec388241bc",
+  "domain": "aws.amazon.com"
+}
