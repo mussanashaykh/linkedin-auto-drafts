@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Deploying Amazon RDS for Db2 using Terraform",
+  "url": "https://aws.amazon.com/blogs/database/deploying-amazon-rds-for-db2-using-terraform/",
+  "created": "2026-05-19 22:30:49+00:00",
+  "text": "Customers running IBM Db2 workloads often ask for a repeatable, auditable way to provision Amazon RDS for Db2 that fits their existing infrastructure-as-code practice. In this post, we introduce a modular Terraform template, published in the aws-samples/sample-rds-db2-tools repository. The template takes you from an empty AWS account to a running RDS for Db2 instance tracked in AWS License Manager in under an hour.",
+  "id": "b7af6705779d10ed1547a2033baff412e2777aae",
+  "domain": "aws.amazon.com"
+}
