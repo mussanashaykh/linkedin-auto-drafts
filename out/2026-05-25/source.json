@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Building an AI-powered grid investigation agent with Aurora DSQL and Amazon Bedrock AgentCore",
+  "url": "https://aws.amazon.com/blogs/database/building-an-ai-powered-grid-investigation-agent-with-aurora-dsql-and-amazon-bedrock-agentcore/",
+  "created": "2026-05-18 16:06:01+00:00",
+  "text": "In this post, we show how to build an Amazon Aurora DSQL database agent that other AI agents can discover and query through natural language using the A2A protocol. You\u2019ll walk through how to build and deploy this using Amazon Bedrock AgentCore capabilities, including AgentCore Runtime for hosting, AgentCore Gateway for tool access via MCP, and the Strands Agents SDK for agent logic.",
+  "id": "e007d5e503c22d7dc9aec9dd205c64bcce507f9e",
+  "domain": "aws.amazon.com"
+}
