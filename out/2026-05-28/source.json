@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Guide your Amazon Aurora MySQL migration with Kiro powers",
+  "url": "https://aws.amazon.com/blogs/database/guide-your-amazon-aurora-mysql-migration-with-kiro-powers/",
+  "created": "2026-05-28 00:15:41+00:00",
+  "text": "Today, we announce the Amazon Aurora MySQL power for Kiro. The power connects Kiro\u2019s AI agent to Aurora MySQL and pairs live database access with curated best-practice guidance. You describe what you need in natural language. The agent generates the API calls, SQL, and configuration for you to review and run. In this post, we walk through how the power guides a production migration from Amazon Relational Database Service (Amazon RDS) for MySQL 8.0 to Aurora MySQL through four phases: assessment, replica creation, promotion, and post-cutover validation.",
+  "id": "bda019b5bb2ccd5578fd236cd2aa2cd387a7aa33",
+  "domain": "aws.amazon.com"
+}
