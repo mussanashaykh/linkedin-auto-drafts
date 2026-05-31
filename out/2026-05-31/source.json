@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Real-time personalized recommendations with Amazon SageMaker and Amazon-managed Valkey",
+  "url": "https://aws.amazon.com/blogs/database/real-time-personalized-recommendations-with-amazon-sagemaker-and-amazon-managed-valkey/",
+  "created": "2026-05-27 18:17:03+00:00",
+  "text": "Amazon receives millions of visits every day, and earning each customer\u2019s trust visit after visit is the foundation that the store is built on. A meaningful part of that trust comes down to whether the recommendations we surface feel relevant and whether they reflect what the customer actually cares about in the moment. In this post, we describe an architecture that makes it achievable. Amazon SageMaker hosts a sentence transformer model on a managed endpoint and turns customer query text into dense semantic vectors. Valkey is an open source, in-memory data store with built-in vector search. It\u2019s available on AWS through Amazon ElastiCache and Amazon MemoryDB. In our architecture, we use Amazon-managed Valkey to store the product catalog as a vector index.",
+  "id": "4ca13ae98cd6f514662490d7619a8993edf26878",
+  "domain": "aws.amazon.com"
+}
