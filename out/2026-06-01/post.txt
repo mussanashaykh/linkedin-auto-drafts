@@ -1,0 +1,9 @@
+From recent work: Preserving custom domain names for Amazon RDS for Db2. I’ve watched multiple teams wrestle with this, and it usually starts the same way: big goals, some quick wins, then creeping complexity. The early excitement fades when small misalignments—like unclear ownership or half-finished configs—turn into recurring headaches. Fixing preserving custom and custom domain early is rarely flashy, but it’s the difference between firefighting every week and sleeping well at night.
+
+My take: You don’t need heroics; you need clarity, guardrails, and practice. The fastest way to improve outcomes is to make success measurable and boring to repeat. That means clear definitions of done, tested recovery steps, and visibility into the right signals—not just raw metrics. Treat domain names and names amazon as design inputs from day one, not problems to patch later. When the fundamentals are right, the advanced tuning actually sticks.
+
+• Define names amazon and make someone accountable.
+• Automate domain names and make someone accountable.
+• Baseline custom domain and make someone accountable.
+
+Where have you seen this go wrong?

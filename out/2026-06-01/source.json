@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Preserving custom domain names for Amazon RDS for Db2",
+  "url": "https://aws.amazon.com/blogs/database/preserving-custom-domain-names-for-amazon-rds-for-db2/",
+  "created": "2026-05-26 17:58:58+00:00",
+  "text": "In this post, we introduce a modular Terraform template, published in the aws-samples/sample-rds-db2-tools repository, that lets your applications keep their existing custom domain names and ports while preserving end-to-end TLS encryption to Amazon RDS for Db2. The template deploys a Server Name Indication (SNI) based TLS proxy that forwards encrypted traffic without ever decrypting it.",
+  "id": "cbf32b1b8908395016b567fabb85f067763bbfae",
+  "domain": "aws.amazon.com"
+}
