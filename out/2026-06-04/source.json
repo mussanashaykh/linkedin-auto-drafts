@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Implementing real-time change data capture with Debezium for Amazon Aurora PostgreSQL and Amazon RDS for PostgreSQL",
+  "url": "https://aws.amazon.com/blogs/database/implementing-real-time-change-data-capture-with-debezium-for-amazon-aurora-postgresql-and-amazon-rds-for-postgresql/",
+  "created": "2026-06-03 15:23:41+00:00",
+  "text": "In this post, we demonstrate how to implement a production-ready CDC solution by using Amazon Aurora for PostgreSQL, Debezium connectors, and Amazon Managed Streaming for Apache Kafka (Amazon MSK). This solution captures database changes in real time and streams them to Kafka topics so that downstream consumers can process the same data for different business purposes.",
+  "id": "85d0ca3fb6771f0fb11fdb96cb32af92e7f59441",
+  "domain": "aws.amazon.com"
+}
