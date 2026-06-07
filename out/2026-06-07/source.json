@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Unlock license mobility with Bring Your Own Media on fully managed Amazon RDS for SQL Server",
+  "url": "https://aws.amazon.com/blogs/database/unlock-license-mobility-with-bring-your-own-media-on-fully-managed-amazon-rds-for-sql-server/",
+  "created": "2026-06-02 15:07:24+00:00",
+  "text": "In this post, you learn how to upload your SQL Server installation media to Amazon Simple Storage Service (Amazon S3) and launch a BYOM instance.",
+  "id": "f01f179904b08e00fe7180b8cc378215814dfc83",
+  "domain": "aws.amazon.com"
+}
