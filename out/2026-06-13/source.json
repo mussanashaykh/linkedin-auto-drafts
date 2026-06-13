@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Automate Amazon Aurora PostgreSQL major or minor version upgrade using AWS Systems Manager and Amazon EC2",
+  "url": "https://aws.amazon.com/blogs/database/automate-amazon-aurora-postgresql-major-or-minor-version-upgrade-using-aws-systems-manager-and-amazon-ec2/",
+  "created": "2026-06-10 18:18:26+00:00",
+  "text": "Managing Aurora PostgreSQL-Compatible Edition upgrades across multiple database clusters can be time-consuming and error-prone when done manually. In this post, we show you how to automate Amazon Aurora PostgreSQL upgrades across your entire database fleet through consistent, repeatable procedures.",
+  "id": "d864d26378bcf0d8a0671a873002bf58522b95b8",
+  "domain": "aws.amazon.com"
+}
