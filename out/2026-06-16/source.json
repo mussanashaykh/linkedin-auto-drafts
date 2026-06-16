@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Provision Oracle Database@AWS resources using Terraform",
+  "url": "https://aws.amazon.com/blogs/database/provision-oracle-databaseaws-resources-using-terraform/",
+  "created": "2026-06-11 19:43:18+00:00",
+  "text": "In this post, we show you how to provision key components of the Oracle Database@AWS offering, including the ODB network, Oracle Exadata infrastructure, Exadata VM clusters and Autonomous VM clusters using Terraform.",
+  "id": "5caf4831f1863ca008821aa5bddd41d7f4358530",
+  "domain": "aws.amazon.com"
+}
