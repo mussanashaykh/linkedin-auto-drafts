@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "PostgreSQL 18 on Amazon Aurora and Amazon RDS: Performance enhancements",
+  "url": "https://aws.amazon.com/blogs/database/postgresql-18-on-amazon-aurora-and-amazon-rds-performance-enhancements/",
+  "created": "2026-06-17 22:29:13+00:00",
+  "text": "This is Part 1 of a two-part series covering the key features in PostgreSQL 18. In this post, we focus on performance enhancements: skip scan optimization for multicolumn indexes, enhanced EXPLAIN output, automatic removal of unnecessary self-joins, and several vacuum and autovacuum improvements that help keep your database running efficiently.",
+  "id": "2638522bf2898a063757891732b0b7e6d5d15b9b",
+  "domain": "aws.amazon.com"
+}
