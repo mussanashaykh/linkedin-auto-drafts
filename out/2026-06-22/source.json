@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Converting an RDS for SQL Server instance from license included to Bring Your Own Media (BYOM)",
+  "url": "https://aws.amazon.com/blogs/database/converting-an-rds-for-sql-server-instance-from-license-included-to-bring-your-own-media-byom/",
+  "created": "2026-06-16 20:52:01+00:00",
+  "text": "Amazon RDS for SQL Server recently launched Bring Your Own Media (BYOM), so you can use your existing SQL Server licenses with fully managed RDS instances. This is particularly valuable if you have existing Microsoft licensing agreements and want to optimize your cloud spending by using those investments on AWS. If you\u2019re already running RDS for SQL Server with the license-included (LI) model, you can now convert those instances to BYOM in place, no database migration required. In this post, we walk you through the end-to-end conversion process: preparing your installation media, creating a BYOM engine version, and performing the in-place license model change.",
+  "id": "ace01a52edc094f1c0a02096c0bbcb8eec615321",
+  "domain": "aws.amazon.com"
+}
