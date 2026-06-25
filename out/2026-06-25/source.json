@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Build a Spring Boot REST API with Amazon Aurora DSQL",
+  "url": "https://aws.amazon.com/blogs/database/build-a-spring-boot-rest-api-with-amazon-aurora-dsql/",
+  "created": "2026-06-24 19:34:40+00:00",
+  "text": "In this post, you learn how to build a Spring Boot REST API that integrates with Aurora DSQL. You\u2019ll configure the Aurora DSQL JDBC Connector for IAM authentication, implement optimistic concurrency control, and run the application across two regional nodes to observe active-active behavior.",
+  "id": "cd1e3ea5bd273798b5edc12bc7e63138653dc2f0",
+  "domain": "aws.amazon.com"
+}
