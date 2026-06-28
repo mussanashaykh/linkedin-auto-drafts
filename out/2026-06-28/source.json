@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Automating cross-account refresh for Amazon RDS Multi-AZ DB clusters",
+  "url": "https://aws.amazon.com/blogs/database/automating-cross-account-refresh-for-amazon-rds-multi-az-db-clusters/",
+  "created": "2026-06-24 19:29:45+00:00",
+  "text": "Keeping non-production environments current with production data is a common operational need. In this post, you learn how to automate cross-account environment refresh for Amazon Relational Database Service (Amazon RDS) Multi-AZ DB clusters (available for PostgreSQL and MySQL) using a serverless pipeline that runs with a single trigger.",
+  "id": "e651c8b43cc969fa18395ae82d58e8e8c34aa0a8",
+  "domain": "aws.amazon.com"
+}
