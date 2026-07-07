@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Manage long-running transactions for AWS DMS performance",
+  "url": "https://aws.amazon.com/blogs/database/manage-long-running-transactions-for-aws-dms-performance/",
+  "created": "2026-06-30 16:29:54+00:00",
+  "text": "In this post, we show you how long-running transactions affect AWS Database Migration Service (AWS DMS) change data capture (CDC) latency, walk through monitoring approaches for Oracle, PostgreSQL, MySQL, and SQL Server, and provide ready-to-use scripts to identify and resolve problematic transactions before they impact your replication performance.",
+  "id": "0c9dda28f109e461279e1b21f5597af38906bc73",
+  "domain": "aws.amazon.com"
+}
