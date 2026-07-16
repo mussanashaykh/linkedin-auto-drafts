@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Provisioning DMS Schema Conversion via AWS CloudFormation",
+  "url": "https://aws.amazon.com/blogs/database/provisioning-dms-schema-conversion-via-aws-cloudformation/",
+  "created": "2026-07-13 21:00:20+00:00",
+  "text": "AWS Database Migration Service Schema Conversion (DMS SC) converts database objects across heterogeneous systems such as Oracle or SQL Server to PostgreSQL or MySQL. In this post, we show you how DMS SC, with generative AI capabilities, elevates the code conversion experience.",
+  "id": "f710fb408b95a85ff5e97f828d1e840b322780e5",
+  "domain": "aws.amazon.com"
+}
