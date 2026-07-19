@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Build a semantic ontology to power AI assistants on AWS \u2013 Part 1",
+  "url": "https://aws.amazon.com/blogs/database/build-a-semantic-ontology-to-power-ai-assistants-on-aws-part-1/",
+  "created": "2026-07-14 18:34:40+00:00",
+  "text": "In this post, we show you how to build a semantic ontology that helps your AI assistants navigate enterprise data efficiently. You\u2019ll learn how to structure a property graph store for data relationships, set up vector indexing for semantic search, and implement an automated fact-learning layer that improves use. This bottom-up approach grounds your ontology in the data that exists, building abstractions from observed patterns rather than theoretical models.",
+  "id": "1d194f536f865972207a42527361e7b16c745aac",
+  "domain": "aws.amazon.com"
+}
