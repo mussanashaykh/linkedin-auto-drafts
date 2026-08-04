@@ -1,0 +1,10 @@
+{
+  "source": "hackernews",
+  "feed": "https://hnrss.org/newest?q=aws+dms",
+  "domain": "www.artie.com",
+  "title": "Benchmark: 68x faster than AWS DMS for real-time CDC",
+  "url": "https://www.artie.com/blogs/artie-vs-aws-dms",
+  "created": "2026-08-01 00:48:29+00:00",
+  "text": "<p>Article URL: <a href=\"https://www.artie.com/blogs/artie-vs-aws-dms\">https://www.artie.com/blogs/artie-vs-aws-dms</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=49130092\">https://news.ycombinator.com/item?id=49130092</a></p>\n<p>Points: 4</p>\n<p># Comments: 0</p>",
+  "id": "bf8574141574d97fe133637b430ed77df1b335d7"
+}
