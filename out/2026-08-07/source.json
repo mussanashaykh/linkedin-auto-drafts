@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Using CloudWatch Database Insights to troubleshoot query performance from calling services",
+  "url": "https://aws.amazon.com/blogs/database/using-cloudwatch-database-insights-to-troubleshoot-query-performance-from-calling-services/",
+  "created": "2026-08-03 18:00:23+00:00",
+  "text": "Learn how to use the calling services feature in Amazon CloudWatch Database Insights to identify which applications are calling your databases and view their performance metrics, so you can pinpoint root causes and contact the right team in minutes rather than hours.",
+  "id": "f6e84a23d1dd238ca4a1fa77afdd5329cabd0e7c",
+  "domain": "aws.amazon.com"
+}
