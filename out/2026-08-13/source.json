@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Building search experiences for JSON data with Amazon OpenSearch Service",
+  "url": "https://aws.amazon.com/blogs/database/building-search-experiences-for-json-data-with-amazon-opensearch-service/",
+  "created": "2026-08-11 16:17:39+00:00",
+  "text": "In this post, you learn how to use Amazon OpenSearch Service as a discovery layer that combines full-text, vector, and geospatial search across JSON documents in a single query, using a restaurant discovery app as a working example.",
+  "id": "9493040d1e2d18c7109778feb2ec2484471cc203",
+  "domain": "aws.amazon.com"
+}
