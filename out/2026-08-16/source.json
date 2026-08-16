@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Addressing CLR assembly deprecation in Amazon RDS for SQL Server",
+  "url": "https://aws.amazon.com/blogs/database/addressing-clr-assembly-deprecation-in-amazon-rds-for-sql-server/",
+  "created": "2026-08-14 16:45:13+00:00",
+  "text": "Microsoft SQL Server 2016 reaches its end of extended support on July 14, 2026. If you run it on Amazon RDS for SQL Server with user-defined CLR assemblies, you must replace them before you upgrade, because CLR is not supported on SQL Server 2017 and later. This post shows you how to find your CLR dependencies and compares four replacement strategies.",
+  "id": "3317c91aba1a8504f0e6eb902d19b36a8263ed98",
+  "domain": "aws.amazon.com"
+}
