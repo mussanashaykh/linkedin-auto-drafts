@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Faster scaling for Aurora serverless to support agentic AI and other spiky workloads",
+  "url": "https://aws.amazon.com/blogs/database/faster-scaling-for-aurora-serverless-to-support-agentic-ai-and-other-spiky-workloads/",
+  "created": "2026-08-14 19:30:10+00:00",
+  "text": "Aurora serverless now automatically adds 12 Aurora Capacity Units to its current capacity within a second, and continues scaling to 256 ACUs as your workload grows. In this post, we show how an Aurora serverless cluster responds to a sudden workload spike, and compare its throughput against a provisioned db.r8g.xlarge instance using benchmark data.",
+  "id": "0480aaf8c2c56e83d621448bb6b180cf31f20164",
+  "domain": "aws.amazon.com"
+}
