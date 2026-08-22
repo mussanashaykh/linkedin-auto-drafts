@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Migrate multilingual full-text search from SQL Server to PostgreSQL",
+  "url": "https://aws.amazon.com/blogs/database/migrate-multilingual-full-text-search-from-sql-server-to-postgresql/",
+  "created": "2026-08-20 20:34:44+00:00",
+  "text": "Migrating full-text search from SQL Server to PostgreSQL can silently change results because the engines handle text, linguistics, and accents differently. This post shows how to reproduce SQL Server full-text search on Amazon Aurora PostgreSQL and Amazon RDS for PostgreSQL, covering collation, tokenization, accent-insensitive search, and synonyms.",
+  "id": "1338c1a6f67553014f21a5554140b88b369bcb47",
+  "domain": "aws.amazon.com"
+}
