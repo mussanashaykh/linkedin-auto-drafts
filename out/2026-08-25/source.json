@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Migrate Oracle Materialized Views with AWS DMS and Fast Refresh",
+  "url": "https://aws.amazon.com/blogs/database/migrate-oracle-materialized-views-with-aws-dms-and-fast-refresh/",
+  "created": "2026-08-18 16:36:11+00:00",
+  "text": "Learn how to configure Oracle Materialized Views with Fast Refresh and materialized view logs to enable efficient, incremental AWS DMS change data capture (CDC) replication. This approach eliminates full-reload overhead and achieves near real-time migration of large, multi-table joined views to AWS.",
+  "id": "12d4073523ffedec63fa590a774ad928d3360999",
+  "domain": "aws.amazon.com"
+}
