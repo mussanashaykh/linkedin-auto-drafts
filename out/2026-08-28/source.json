@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "How Channel Corporation modernized their architecture with Amazon DynamoDB, Part 3: User and Badge",
+  "url": "https://aws.amazon.com/blogs/database/how-channel-corporation-modernized-their-architecture-with-amazon-dynamodb-part-3-user-and-badge/",
+  "created": "2026-08-25 18:39:51+00:00",
+  "text": "Channel Corporation shares how they split their all-purpose Amazon DynamoDB User table into role-specific tables, moving Badge data into a dedicated UserBadge table to stop transaction-conflict throttling and GSI back pressure, and how they ran a zero-downtime online migration using DynamoDB Export and Import with Amazon S3 and AWS Glue.",
+  "id": "577f5827e4ccf916b387e3a40d16f57ea9c59b43",
+  "domain": "aws.amazon.com"
+}
