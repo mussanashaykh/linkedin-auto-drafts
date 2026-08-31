@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Cross-database access using module signing on Amazon RDS for SQL Server",
+  "url": "https://aws.amazon.com/blogs/database/cross-database-access-using-module-signing-on-amazon-rds-for-sql-server/",
+  "created": "2026-08-24 18:07:08+00:00",
+  "text": "If you need cross-database access on Amazon RDS for SQL Server but cannot enable TRUSTWORTHY, module signing with certificates is the secure, RDS-compatible alternative. This post shows how to grant cross-database permissions to specific stored procedures without TRUSTWORTHY and with a stronger, least-privilege security posture.",
+  "id": "113bd5efe90b1e5f674d11a7d1f66c59ba209cd5",
+  "domain": "aws.amazon.com"
+}
