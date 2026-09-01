@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Provision a secure Amazon DocumentDB cluster with Terraform",
+  "url": "https://aws.amazon.com/blogs/database/provision-a-secure-amazon-documentdb-cluster-with-terraform/",
+  "created": "2026-08-31 20:24:23+00:00",
+  "text": "Learn how to provision a secure Amazon DocumentDB cluster using Terraform. This post applies infrastructure-as-code best practices with encryption, AWS Secrets Manager authentication, network isolation, and encrypted monitoring.",
+  "id": "674710b9af7c444738753778eb37ea4c9ba8fe4c",
+  "domain": "aws.amazon.com"
+}
