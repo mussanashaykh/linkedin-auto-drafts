@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Fix circular role dependencies before upgrading Amazon RDS and Amazon Aurora PostgreSQL",
+  "url": "https://aws.amazon.com/blogs/database/resolve-circular-role-dependencies-during-upgrades-of-amazon-rds-for-postgresql-and-amazon-aurora/",
+  "created": "2026-08-31 23:42:55+00:00",
+  "text": "Circular role dependencies can stall or roll back a major version upgrade of Amazon RDS for PostgreSQL or Amazon Aurora PostgreSQL when you move from PostgreSQL 14 or earlier to 15 or later. Learn why this happens, how to detect it with a single pre-upgrade query, and how to clear it before you upgrade.",
+  "id": "4ed55c272e3533bf52464a409c83f5ca275d61b9",
+  "domain": "aws.amazon.com"
+}
