@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Monitor self-managed databases with Amazon CloudWatch Database Insights",
+  "url": "https://aws.amazon.com/blogs/database/monitor-self-managed-databases-with-amazon-cloudwatch-database-insights/",
+  "created": "2026-09-03 18:10:43+00:00",
+  "text": "Amazon CloudWatch Database Insights now extends to self-managed databases. Monitor self-managed PostgreSQL on Amazon EC2 alongside your Amazon Aurora and Amazon RDS fleet from a single console, with the same DB Load, Top SQL, and wait event analysis you use for managed databases.",
+  "id": "8b7e4f44084bddc4b69ad059ec111f8fe13c8592",
+  "domain": "aws.amazon.com"
+}
