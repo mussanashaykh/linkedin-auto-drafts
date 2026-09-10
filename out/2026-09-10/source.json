@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "From noise to signal: Monitoring Amazon DocumentDB like a pro",
+  "url": "https://aws.amazon.com/blogs/database/from-noise-to-signal-monitoring-amazon-documentdb-like-a-pro/",
+  "created": "2026-09-09 15:23:20+00:00",
+  "text": "Learn how to build a tiered alerting strategy for Amazon DocumentDB by organizing CloudWatch metrics into Critical, Warning, and Advisory tiers, diagnosing slow queries through three complementary lenses, and monitoring garbage collection health before it becomes a cluster-wide incident.",
+  "id": "60726cbbc8a00a04c0a4cc811df12fd8bf794bb3",
+  "domain": "aws.amazon.com"
+}
