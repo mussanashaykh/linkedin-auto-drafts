@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Building async Python applications with Tortoise ORM and Amazon Aurora DSQL",
+  "url": "https://aws.amazon.com/blogs/database/building-async-python-applications-with-tortoise-orm-and-amazon-aurora-dsql/",
+  "created": "2026-09-09 15:27:43+00:00",
+  "text": "Build a high-concurrency async Python rideshare application with Tortoise ORM and Amazon Aurora DSQL. This post walks through the key adaptations: UUID primary keys, IAM-authenticated asyncpg connections with a connection-pool patch, individual DDL execution, and optimistic concurrency control (OCC) retry logic.",
+  "id": "517e6f550774f3d53ac89f98a478474bed8d6c3b",
+  "domain": "aws.amazon.com"
+}
