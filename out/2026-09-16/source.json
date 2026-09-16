@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Resolve Amazon Aurora PostgreSQL lock contention with Database Insights: Part 2",
+  "url": "https://aws.amazon.com/blogs/database/resolve-amazon-aurora-postgresql-lock-contention-with-database-insights-part-2/",
+  "created": "2026-09-14 16:02:16+00:00",
+  "text": "Part 1 showed how row lock contention degrades Amazon Aurora PostgreSQL throughput. In Part 2, use Amazon CloudWatch Database Insights and its Lock Tree to pinpoint blocking sessions, then resolve contention with query termination, timeout parameters, and architectural patterns such as SKIP LOCKED and row splitting that restore throughput.",
+  "id": "d1e3aa9524ea26113e2b0bc857ca0518b663acf6",
+  "domain": "aws.amazon.com"
+}
