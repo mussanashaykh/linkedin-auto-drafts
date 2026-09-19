@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "How Intuit and AWS systematically improved resiliency on ElastiCache using AWS Fault Injection Service",
+  "url": "https://aws.amazon.com/blogs/database/how-intuit-and-aws-systematically-improved-resiliency-on-elasticache-using-aws-fault-injection-service/",
+  "created": "2026-09-17 15:59:44+00:00",
+  "text": "Learn how Intuit and AWS validated Amazon ElastiCache resilience under a real Availability Zone impairment using AWS Fault Injection Service, cutting recovery from over 50 minutes to under 2 minutes with no manual intervention and reducing customer impact to effectively zero.",
+  "id": "ee4ce6a73de358353c894f0859c99c4107dd3927",
+  "domain": "aws.amazon.com"
+}
