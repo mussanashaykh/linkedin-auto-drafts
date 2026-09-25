@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Megabytes in milliseconds: How FireTV uses parallel queries and vertical partitioning to serve millions of customers in Amazon DynamoDB",
+  "url": "https://aws.amazon.com/blogs/database/megabytes-in-milliseconds-how-firetv-uses-parallel-queries-and-vertical-partitioning-to-serve-millions-of-customers-in-amazon-dynamodb/",
+  "created": "2026-09-23 18:56:35+00:00",
+  "text": "How Amazon FireTV redesigned its Continue Watching watch-progress data model on Amazon DynamoDB with vertical partitioning and hash-prefixed sort keys for parallel reads, removing item-size limits, cutting write costs by 97%, and keeping reads under 50 milliseconds at any profile size.",
+  "id": "2daf2f5764c3b8cc8129285fc7a0463620c83c13",
+  "domain": "aws.amazon.com"
+}
