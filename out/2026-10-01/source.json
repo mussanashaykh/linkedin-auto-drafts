@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "How to stream PostgreSQL changes to Amazon S3 with AWS Fargate",
+  "url": "https://aws.amazon.com/blogs/database/how-to-stream-postgresql-changes-to-amazon-s3-with-aws-fargate/",
+  "created": "2026-09-25 16:25:06+00:00",
+  "text": "In this post, we show you how to build a fully managed, event-driven change data capture (CDC) pipeline. It streams row-level changes from Amazon RDS for PostgreSQL or Amazon Aurora PostgreSQL to Amazon S3 in near real time. You deploy the entire pipeline with a single AWS CloudFormation template, and it can run in private subnets with no internet gateway without exposing resources to the public internet.",
+  "id": "1554b8957f1dcf57bd64e67dd90e5de2a7ad6589",
+  "domain": "aws.amazon.com"
+}
