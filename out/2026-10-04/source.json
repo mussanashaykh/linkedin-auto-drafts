@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Migrate Db2 z/OS to Amazon Aurora PostgreSQL using AWS DMS and gateway server",
+  "url": "https://aws.amazon.com/blogs/database/migrate-db2-z-os-to-amazon-aurora-postgresql-using-aws-dms-and-gateway-server/",
+  "created": "2026-09-30 16:45:26+00:00",
+  "text": "Learn how to use AWS DMS and a Db2 gateway server on Amazon EC2 to migrate and replicate data from an on-premises IBM Db2 database on z/OS to Amazon Aurora PostgreSQL. This post covers configuring the gateway, creating DMS resources, running a full load with periodic full-load refresh, and validating the migration.",
+  "id": "50551e3085e426b57e107dabbdbc4e19655f4928",
+  "domain": "aws.amazon.com"
+}
