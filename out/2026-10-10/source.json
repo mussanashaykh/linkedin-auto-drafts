@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Amagi\u2019s intelligent media operations with Amazon Neptune",
+  "url": "https://aws.amazon.com/blogs/database/amagis-intelligent-media-operations-with-amazon-neptune/",
+  "created": "2026-10-05 15:24:12+00:00",
+  "text": "Amagi built a Global Metadata Store on Amazon Neptune to model billions of interconnected media metadata relationships. Learn how their RDF knowledge graph, paired with Amazon OpenSearch Service and a custom blank-node synchronization layer, delivers deep semantic queries and sub-500ms transactional reads across 2,500+ channels and 150+ countries.",
+  "id": "7ab5d08011a8f79c6542514fc67fe6706a6ed6c9",
+  "domain": "aws.amazon.com"
+}
