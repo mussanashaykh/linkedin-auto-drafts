@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Modernizing document storage for search, scale, and agility",
+  "url": "https://aws.amazon.com/blogs/database/modernizing-document-storage-for-search-scale-and-agility/",
+  "created": "2026-10-13 15:23:39+00:00",
+  "text": "Storing extracted document data in a relational JSON or BLOB column works until you need search and scale. Learn how to recognize when document data has outgrown relational storage, and how to choose between Amazon DocumentDB and Amazon DynamoDB using a progressive, low-risk migration pattern.",
+  "id": "696ce3a3a7f1e1842d6e74ca1ca10f869bcb69f7",
+  "domain": "aws.amazon.com"
+}
