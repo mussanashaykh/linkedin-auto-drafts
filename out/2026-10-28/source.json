@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Troubleshooting Data Mismatches with tablediff on Amazon RDS for SQL Server",
+  "url": "https://aws.amazon.com/blogs/database/troubleshooting-data-mismatches-with-tablediff-on-amazon-rds-for-sql-server/",
+  "created": "2026-10-22 16:33:04+00:00",
+  "text": "Learn how to use the SQL Server tablediff utility to validate an Amazon RDS for SQL Server read replica against its primary after a replication lag event, detect and classify row-level data mismatches, and apply auditable T-SQL fix scripts on a promoted replica instance.",
+  "id": "dd8e2078d0c161686e293e5965fc3a02a80e8a4d",
+  "domain": "aws.amazon.com"
+}
