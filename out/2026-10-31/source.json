@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "The New York Times cut Oracle migration time from 18 to 5 months",
+  "url": "https://aws.amazon.com/blogs/database/the-new-york-times-cut-oracle-migration-time-from-18-to-5-months/",
+  "created": "2026-10-26 17:24:10+00:00",
+  "text": "Learn how The New York Times migrated its PLATO subscription revenue engine from Oracle to Amazon Aurora PostgreSQL in about 5 months instead of 18, using an AI-agent-native approach on Amazon Bedrock with AWS DMS to automate schema conversion and multi-language code remediation at enterprise scale.",
+  "id": "4fe4dca5748f4999bb318220401a3af738041a4d",
+  "domain": "aws.amazon.com"
+}
