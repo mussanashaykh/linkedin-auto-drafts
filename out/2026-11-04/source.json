@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Build an organization-wide Amazon RDS posture dashboard with Kiro",
+  "url": "https://aws.amazon.com/blogs/database/build-an-organization-wide-amazon-rds-posture-dashboard-with-kiro/",
+  "created": "2026-11-03 16:38:19+00:00",
+  "text": "Deletion protection on an Amazon RDS database is a single setting that anyone can switch off, and across hundreds of accounts there is no single place to see which databases still run without it. This post shows how to track Amazon RDS posture organization-wide with one Amazon CloudWatch dashboard, built and verified with Kiro.",
+  "id": "b3f622213e064d4e2acbb5de4d01e6347c7e007a",
+  "domain": "aws.amazon.com"
+}
