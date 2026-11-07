@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Introducing bulk put items for Amazon DynamoDB: Load data from Amazon S3 into existing tables at scale",
+  "url": "https://aws.amazon.com/blogs/database/introducing-bulk-put-items-for-amazon-dynamodb-load-data-from-amazon-s3-into-existing-tables-at-scale/",
+  "created": "2026-11-05 19:23:08+00:00",
+  "text": "Bulk put items is a fully managed feature that loads data from Amazon S3 directly into your existing Amazon DynamoDB tables, with no impact to your table's read and write performance and at a lower price point than per-request writes. This post introduces the feature, walks through running an import end to end, and shares best practices for production.",
+  "id": "9a557d1c3032ec0cf9af814f0cdbe50fecde55ea",
+  "domain": "aws.amazon.com"
+}
