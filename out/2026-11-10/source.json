@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Topstep\u2019s migration journey: Self-managed Redis OSS to Amazon ElastiCache for Valkey",
+  "url": "https://aws.amazon.com/blogs/database/topsteps-migration-journey-self-managed-redis-oss-to-amazon-elasticache-for-valkey/",
+  "created": "2026-11-09 16:59:06+00:00",
+  "text": "Topstep migrated roughly 53 million keys from self-managed Redis OSS to a fully managed, Multi-AZ Amazon ElastiCache for Valkey cluster. Using RedisShake and a single Amazon Route 53 DNS change, the team completed a blue/green cutover in seconds with no application code changes beyond a small TLS configuration update.",
+  "id": "c41c38058387e542719306d67dbf4e0b6ffd5084",
+  "domain": "aws.amazon.com"
+}
