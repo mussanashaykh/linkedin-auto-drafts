@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Fix Amazon Aurora MySQL error 63955: Virtual index ID overflow",
+  "url": "https://aws.amazon.com/blogs/database/fix-amazon-aurora-mysql-error-63955-virtual-index-id-overflow/",
+  "created": "2026-11-13 21:10:28+00:00",
+  "text": "An Amazon Aurora MySQL cluster can exhaust its virtual index ID limit, after which any CREATE INDEX that includes a virtual column fails with error 63955 until you rebuild the databases. This post shows how to recognize the error, why backups cannot clear it, and how to run a logical dump-and-restore migration with monitoring to catch it next time.",
+  "id": "e5c8ccf75a7dace2f2dd930018c1a320e00a5fa7",
+  "domain": "aws.amazon.com"
+}
