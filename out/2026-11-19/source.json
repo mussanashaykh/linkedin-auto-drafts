@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Build an AI-powered DBA assistant for Amazon Aurora and Amazon RDS with Kiro",
+  "url": "https://aws.amazon.com/blogs/database/build-an-ai-powered-dba-assistant-for-amazon-aurora-and-amazon-rds-with-kiro/",
+  "created": "2026-11-17 19:43:17+00:00",
+  "text": "Learn how to build a DBA assistant with Kiro that investigates and resolves Amazon Aurora PostgreSQL performance incidents through natural language. Using two MCP servers, the agent reads Amazon CloudWatch metrics and Database Insights, runs diagnostic queries, and surfaces fixes you apply through your change management process.",
+  "id": "9bd6b3fcdd9f744a4dd24bf2a94b37a092792a63",
+  "domain": "aws.amazon.com"
+}
