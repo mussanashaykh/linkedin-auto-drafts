@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Amazon ElastiCache Serverless turns three",
+  "url": "https://aws.amazon.com/blogs/database/amazon-elasticache-serverless-turns-three/",
+  "created": "2026-11-19 18:35:55+00:00",
+  "text": "In this post, we look back at three years of Amazon ElastiCache Serverless, show how customers use it, cover what we launched this year and how we patch your cache with minimal disruption, show how to estimate what it costs, and help you decide whether it fits your workload.",
+  "id": "25fc6edf97783fc12e0abceecf03f9ed9f2c74dd",
+  "domain": "aws.amazon.com"
+}
