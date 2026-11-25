@@ -1,0 +1,10 @@
+{
+  "source": "rss",
+  "feed": "https://aws.amazon.com/blogs/database/feed/",
+  "title": "Amazon RDS for MySQL LTS version 9.7 is now generally available",
+  "url": "https://aws.amazon.com/blogs/database/amazon-rds-for-mysql-lts-version-9-7-is-now-generally-available/",
+  "created": "2026-11-18 20:52:19+00:00",
+  "text": "Amazon RDS for MySQL now supports MySQL 9.7, the latest community LTS version, alongside 8.0 and 8.4. This post covers what\u2019s new in 9.7, the key breaking changes, and how to upgrade safely from MySQL 8.4 using Amazon RDS Blue/Green deployments.",
+  "id": "64e3438c9c5e01b42da814cf5dcf80ccaa57ba28",
+  "domain": "aws.amazon.com"
+}
